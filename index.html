@@ -1,426 +1,112 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+﻿<!DOCTYPE html/>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <style type="text/css">
+        @import "css.css";
+    </style>
+    <title>Xinqiang Chen</title>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="cye-nm"><head><meta http-equiv="Content-Type" content="text/html; charset=gbk">
-<link rel="shortcut icon" href="./images/logo.jpg">
+    <script type="text/javascript">
+        let getQueryStrArgs = function () {                 //获取访问参数按&分开  //window.location.search 得到的是链接问号之后的字符，
+            let qs = (window.location.search.length > 0 ? window.location.search.substring(1) : "");
+            args = {};
+            for (let item of qs.split("&").map(kv => kv.split("="))) {
+                let name = decodeURIComponent(item[0]),
+                    value = decodeURIComponent(item[1]);
+                if (name.length) {
+                    args[name] = value;
+                }
+            }
+            return args;
+        }
 
-<meta name="keywords" content="Xinqiang Chen, Chen Xinqiang, ILSE, SMU, Shanghai Maritime University">
-<meta name="description" content="Xinqiang Chen&#39;s home page">
-<link rel="stylesheet" href="./css/jemdoc.css" type="text/css">
-<title>Xinqiang Chen</title>
+        var mapTo = "0";
+        if (window.location.search.length > 0) {
+            let args = getQueryStrArgs();
+            mapTo = args["mapTo"];
+            console.log(args);
+        }
 
-<script type="text/javascript" async="" src="./css/ga.js"></script><script type="text/javascript">
+        function choice(i) {
+            mapTo = i;
+            window.location.search = "mapTo=" + i;
+            console.log(mapTo);
+        };
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39824124-1']);
-  _gaq.push(['_trackPageview']);
+        function loadStyleStrin(css) {
+            let style = document.createElement("style");
+            style.type = "text/css";
+            try {
+                style.appendChild(document.createTextNode(css));
+            } catch {
+                style.styleSheet.cssText = css;
+            }
+            let head = document.getElementsByTagName("head")[0];
+            head.appendChild(style);
+        }
+    </script>
+    <!--主页面内容-->
+    <script type="text/javascript">var strVar = ""; strVar += "<h1>Xinqiang Chen (陈信强)</h1>\n", strVar += '<div id="main_1">\n', strVar += "  <div>\n", strVar += '    <img src="./image/imgUW.jpg" alt="头像" width="150" style="margin: 20px" />\n', strVar += "  </div>\n", strVar += "  <div>\n", strVar += "    <h2>Ph.D Assitant Professor Master Supervisor</h2>\n", strVar += "    <p>\n", strVar += "      Institute of Logistics Science and Engineering<br />Shanghai Maritime\n", strVar += "      University<br />Shanghai, China <br />\n", strVar += "    </p>\n", strVar += '    <div style="float: none; margin-bottom: 4px">\n', strVar += "      <div\n", strVar += '        style="\n', strVar += "          background-image: url(image/ico.png);\n", strVar += "          width: 21px;\n", strVar += "          height: 21px;\n", strVar += "          background-position: -69px -253px;\n", strVar += "          margin-right: 5px;\n", strVar += '        "\n', strVar += "      ></div>\n", strVar += "      <span\n", strVar += "        ><a\n", strVar += '          href="https://scholar.google.com/citations?user=wMI8EpAAAAAJ&hl=en&oi=ao"\n', strVar += '          target="_blank"\n', strVar += "          ><b>Google Scholar</b></a\n", strVar += "        ></span\n", strVar += "      >\n", strVar += "    </div>\n", strVar += '    <div style="float: none; margin-bottom: 4px">\n', strVar += "      <div\n", strVar += '        style="\n', strVar += "          background-image: url(image/ico.png);\n", strVar += "          width: 21px;\n", strVar += "          height: 21px;\n", strVar += "          background-position: -92px 1px;\n", strVar += "          margin-right: 5px;\n", strVar += '        "\n', strVar += "      ></div>\n", strVar += "      <span\n", strVar += '        ><a href="mailto:chenxinqiang@stu.shmtu.edu.cn"><b>E-mail</b></a></span\n', strVar += "      >\n", strVar += "    </div>\n", strVar += '    <div style="float: none; margin-bottom: 4px">\n', strVar += "      <div\n", strVar += '        style="\n', strVar += "          background-image: url(image/ico.png);\n", strVar += "          width: 21px;\n", strVar += "          height: 21px;\n", strVar += "          background-position: 1px -44px;\n", strVar += "          margin-right: 5px;\n", strVar += '        "\n', strVar += "      ></div>\n", strVar += "      <span\n", strVar += "        ><a\n", strVar += '          href="https://www.researchgate.net/profile/Xinqiang_Chen"\n', strVar += '          target="_blank"\n', strVar += "          ><b>Researchgate</b></a\n", strVar += "        ></span\n", strVar += "      >\n", strVar += "    </div>\n", strVar += "  </div>\n", strVar += "</div>\n", strVar += "\n"</script>
+    <script type="text/javascript">var home = strVar; strVar = ""</script>
+    <script type="text/javascript">strVar += '<h1><a id="Biography">Biography</a></h1>\n', strVar += '<p style="text-align:justify;text-indent:24px">Xinqiang Chen received his Ph.D. degree (2018) majoring at traffic information engineering and controlling from Shanghai Maritime University, Shanghai, China. Now he serves as an Assitant Professor and master supervisor at Institute of Logistics Science and Engineering at Shanghai Maritime University. Moreover, he serves as the research associate at Institute of Atmospheric Sciences, Fudan University. From September, 2015 to September, 2016, he was a visiting Ph.D student in Smart Transportation Applications and Research Laboratory (STAR Lab), University of Washington, Seattle, WA, USA. He serves as a guest editor for three SCI-indexed journals, editorial board member for 6 international journals and technical program committee for 6 international conferences. His research interests include transportation image processing, intelligent maritime visual perception, transportation data mining, vision-aided autonomous vehicle navigation, smart port and machine learning, etc.</p>\n<br /><h1><a href="file/EnglishCV.pdf" target="_blank">CV in Enghlish</a> <a href="file/ChineseCV.pdf" target="_blank">CV in Chinese</a></h1>', strVar += "\n"</script>
+    <script type="text/javascript">var Biography = strVar; strVar = ""</script>
+    <script type="text/javascript">strVar += '<h1><a id="Education & Experience">Education & Experience</a></h1><ul><li>2020.05 - Present <b>Fudan University<br>Research Associate</b>, Institute of Atmospheric Sciences</li><li>2018.07 - Present <b>Shanghai Maritime University<br>Assitant Professor</b>, Institute of logistics science and engineering</li><li>2013.09 - 2018.06 <b>Shanghai Maritime University<br>Ph.D. Candidate</b>, Merchant Marine College</li><li>2015.09 - 2016.09 <b>University of Washington<br>Visting Ph.D.</b>, Department of Civil Environmetanl and Engineering</li><li>2010.09 - 2012.07 <b>hanghai Maritime University<br>Master</b>, Merchant Marine College</li></ul>\n'</script>
+    <script type="text/javascript">var EE = strVar; strVar = ""</script>
+    <script type="text/javascript">strVar += '<div id="main_2"><h1><a id="Selected publications">Selected publications</a></h1><p><i>(Video maybe adjusted into different length for different reseach purposes. Please cite our publications if you find the paper or data may benefit your research)</i></p><ul id="public" style="list-style-type:none"><li><video width="240" height="160" autoplay loop muted><source src="./image/1-1.mp4"></video><div style="height:160px"><p><a href="file/High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos.pdf" target="_blank">High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos</a><br><b>Xiqiang Chen</b>,Zhibin Li, Yongsheng Yang, et al.<br>IEEE Transactions on Intelligent Transportation Systems, 22(5): 3190-3202<br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>In recent years, unmanned aerial vehicle (UAV) has become an increasingly popular tool for traffic monitoring and data collection on highways due to its advantage of low cost, high resolution, good flexibility, and wide spatial coverage. Extracting high-resolution vehicle trajectory data from aerial videos taken by a UAV flying over target highway segment becomes a critical research task for traffic flow modeling and analysis. This study aims at proposing a novel methodological framework for automatic and accurate vehicle trajectory extraction from aerial videos. The method starts by developing an ensemble detector to detect vehicles in the target region. Then, the kernelized correlation filter is applied to track vehicles fast and accurately. After that, a mapping algorithm is proposed to transform vehicle positions from the Cartesian coordinates in image to the Frenet coordinates to extract raw vehicle trajectories along the roadway curves. The data denoising is then performed using a wavelet transform to eliminate the biased vehicle trajectory positions. Our method is tested on two aerial videos taken on different urban expressway segments in both peak and non-peak hours on weekdays. The extracted vehicle trajectories are compared with manual calibrated data to testify the framework performance. The experimental results show that the proposed method successfully extracts vehicle trajectories with a high accuracy: the measurement error of Mean Squared Deviation is 2.301 m, the Root-mean-square deviation is 0.175 m, and the Pearson correlation coefficient is 0.999. The video and trajectory data in this study are publicly accessible for serving as benchmark at https://seutraffic.com.</p></div></div></div></li><li><img alt="" src="image/1-2.png" width="240" height="160"><div style="height:160px"><p><a href="file/Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network.pdf" target="_blank">Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network</a><br><b>Xiqiang Chen</b>,Yongsheng Yang, Shengzheng Wang, et al<br>Journal of Navigation, 73(4),813-832.(ESI)<br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Most previous research has handled the task of ship type recognition by exploring hand-craft ship features, which may fail to distinguish ships with similar visual appearances. This situation motivates us to propose a novel deep learning based ship type recognition framework which we have named coarse-to-fine cascaded convolution neural network (CFCCNN). First, the proposed CFCCNN framework formats the input training ship images and data, and provides trainable input data for the hidden layers of the CFCCNN. Second, the coarse and fine steps are run in a nesting manner to explore discriminative features for different ship types. More specifically, the coarse step is trained in a similar manner to the traditional convolution neural network, while the fine step introduces regularisation mechanisms to extract more intrinsic ship features, and fine tunes parameter settings to obtain better recognition performance. Finally, we evaluate the performance of the CFCCNN model for recognising the most common types of merchant ship (oil tanker, container, LNG tanker, chemical carrier, general cargo, bulk carrier, etc.). The experimental results show that the proposed framework obtains better recognition performance than the conventional methods of ship type recognition.</p></div></div></div></li><li><video width="240" height="160" autoplay loop muted><source src="./image/1-3.mp4"></video><div style="height:160px"><p><a href="file/Robust ship tracking via multi-view learning and sparse representation.pdf" target="_blank">Robust ship tracking via multi-view learning and sparse representation</a><br><b>Xiqiang Chen</b>,Shengzheng Wang, Chaojian Shi, et al.<br>Journal of Navigation, 72(1): 176-192. (ESI) <a href="https://www.researchgate.net/publication/327632766_Robust_Ship_Tracking_via_Multi-view_Learning_and_Sparse_Representation">labeled ship data</a><br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Conventional visual ship tracking methods employ single and shallow features for the ship tracking task, which may fail when a ship presents a different appearance and shape in maritime surveillance videos. To overcome this difficulty, we propose to employ a multi-view learning algorithm to extract a highly coupled and robust ship descriptor from multiple distinct ship feature sets. First, we explore multiple distinct ship feature sets consisting of a Laplacian-ofGaussian (LoG) descriptor, a Local Binary Patterns (LBP) descriptor, a Gabor filter, a Histogram of Oriented Gradients (HOG) descriptor and a Canny descriptor, which present geometry structure, texture and contour information, and more. Then, we propose a framework for integrating a multi-view learning algorithm and a sparse representation method to track ships efficiently and effectively. Finally, our framework is evaluated in four typical maritime surveillance scenarios. The experimental results show that the proposed framework outperforms the conventional and typical ship tracking methods.</p></div></div></div></li><li><img alt="" src="image/1-4.png" width="240" height="160"><div style="height:160px"><p><a href="file/Visual Ship Tracking via a Hybrid Kernelized Correlation Filter and Anomaly Cleansing Framework.pdf" target="_blank">Visual Ship Tracking via a Hybrid Kernelized Correlation Filter and Anomaly Cleansing Framework</a><br><b>Xiqiang Chen</b>,Xueqian Xu, Yongsheng Yang, et al.<br>Applied Ocean Research, 106(2021): 1-10.<br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Ship tracking from maritime visual sensing data (namely maritime surveillance videos) provides various kinematic maritime traffic information, which significantly benefits remote maritime traffic controlling and management, off-site law enforcement, etc. But, it is difficult to extract distinct ship visual features when the target ship is sheltered by the neighboring ship in the maritime images (or the images are shot in low visibility condition). To address the difficulty, we proposed a hybrid ship tracking framework via the help of kernelized correlation filter (KCF) and anomaly cleaning models (including curve fitting method and Kalman filter). First, we employed the KCF model to obtain raw ship trajectories in consecutive maritime images. Second, our ship tracker is accurately initialized (to be specific, ground truth ship position in the first frame is employed to initialize the ship tracker). Third, the Kalman filter is introduced to suppress the trivial ship position oscillations in the raw ship trajectories. We verified the proposed framework performance on the four typical maritime scenarios. The experimental results indicate that the proposed ship tracker showed more accurate ship tracking results compared to other four popular ship trackers in terms of average root mean square error (RMSE), mean absolute deviation (MAD) and mean square error (MSE). The research findings can help maritime traffic participants obtain visual on-spot maritime kinematic information, and thus further enhance maritime traffic safety.</p></div></div></div></li><li><img alt="" src="image/1-5.png" width="240" height="160"><div style="height:160px"><p><a href="file/Sensing Data Supported Traffic Flow Prediction via Denoising Schemes and ANN.pdf" target="_blank">Sensing Data Supported Traffic Flow Prediction via Denoising Schemes and ANN: A Comparison</a><br><b>Xiqiang Chen</b>,Shubo Wu, Chaojian Shi, et al.<br>IEEE Sensors Journal, 20(23): 14317-14328.<br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Short-term traffic flow prediction plays a key role of Intelligent Transportation System (ITS), which supports traffic planning, traffic management and control, roadway safety evaluation, energy consumption estimation, etc. The widely deployed traffic sensors provide us numerous and continuous traffic flow data, which may contain outlier samples due to expected sensor failures. The primary objective of the study was to evaluate the use of various smoothing models for cleaning anomaly in traffic flow data, which were further processed to predict short term traffic flow evolution with artificial neural network. The wavelet filter, moving average model, and Butterworth filter were carefully tested to smooth the collected loop detector data. Then, the artificial neural network was introduced to predict traffic flow at different time spans, which were quantitatively analyzed with commonly-used evaluation metrics. The findings of the study provide us efficient and accurate denoising approaches for short term traffic flow prediction.</p></div></div></div></li></ul></div>\n'</script>
+    <script type="text/javascript">var SP = strVar; strVar = ""</script>
+    <!--合照-->
+    <script type="text/javascript">strVar += '<div><h3>大合照</h3></div>'; strVar += '<div id="LAB"><ul><li><img src="image/Lab_1.jpg" class="OURLABIMG"> 1</li><li><img src="image/Lab_2.jpg" class="OURLABIMG"> 2</li><li><img src="image/Lab_1.jpg" class="OURLABIMG"> 1</li></ul></div>\n'</script>
+    <!--师兄的图片-->
+    <script type="text/javascript">strVar += '<div><h3>学生</h3></div>'; strVar += '<div style="height:900px;width:100%"><div class="menber"><img src="http://iph.href.lu/50x76?text=图片"><p>姓名：齐 雷</p><p>年级：2018级（毕业生）</p><p>籍贯：</p><p>去向：上海小米金融服务信息有限公司</p></div><div class="menber"><img src="image/许学谦.jpg"><p>姓名：许学谦（毕业生）</p><p>年级：2018级</p><p>籍贯：甘肃</p><p>去向：武汉理工大学深造博士</p></div><div class="menber"><img src="http://iph.href.lu/50x76?text=图片"><p>姓名：陈辉兴（毕业生）</p><p>年级：2018级</p><p>籍贯：海南三亚</p><p>去向：中国工商银行（上海）</p></div><div class="menber"><img src="http://iph.href.lu/50x76?text=图片"><p>姓名：陆锦泉（毕业生）</p><p>年级：2019级</p><p>籍贯：广东佛山</p><p>去向：广东省城乡规划设计研究院</p></div><div class="menber"><img src="image/凌峻.jpg"><p>姓名：凌 峻（在校生）</p><p>年级：2019级</p><p>籍贯：</p><p>研究方向：</p></div><div class="menber"><img src="image/王梓创.jpg"><p>姓名：王梓创（在校生）</p><p>年级：2020级</p><p>籍贯：</p><p>研究方向：</p></div><div class="menber"><img src="image/郑金彪.jpg"><p>姓名：郑金彪（在校生）</p><p>年级：2020级</p><p>籍贯：</p><p>研究方向：</p></div><div class="menber"><img src="http://iph.href.lu/50x76?text=图片"><p>姓名：叶 乐（在校生）</p><p>年级：2020级</p><p>籍贯：</p><p>研究方向：</p></div><div class="menber"><img src="http://iph.href.lu/50x76?text=图片"><p>姓名：王美琳（在校生）</p><p>年级：2021级</p><p>籍贯：</p><p>研究方向：</p></div><div class="menber"><img src="http://iph.href.lu/50x76?text=图片"><p>姓名：陈伟平（在校生）</p><p>年级：2021级</p><p>籍贯：</p><p>研究方向：</p></div><div class="menber"><img src="http://iph.href.lu/50x76?text=图片"><p>姓名：魏晨鑫（在校生）</p><p>年级：2021级</p><p>籍贯：</p><p>研究方向：</p></div></div>\n'</script>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<style id="nightModeStyle">
-html.cye-enabled.cye-nm:not(*:-webkit-full-screen-ancestor) body,
- html.cye-enabled.cye-nm:not(*:-webkit-full-screen-ancestor) #cye-workaround-body {-webkit-filter:contrast(91%) brightness(84%) invert(1);}</style><style id="cyebody">html.cye-enabled.cye-lm body{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyediv">html.cye-enabled.cye-lm div{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyetable">html.cye-enabled.cye-lm th{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}html.cye-enabled.cye-lm td{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyetextInput">html.cye-enabled.cye-lm input[type=text]{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}html.cye-enabled.cye-lm textarea{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeselect">html.cye-enabled.cye-lm select{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeul">html.cye-enabled.cye-lm ul{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeChangeByClick">html.cye-enabled.cye-lm .cye-lm-tag,html.cye-enabled.cye-lm.cye-lm-tag{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style>
-<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
-.en-markup-crop-options {
-    top: 18px !important;
-    left: 50% !important;
-    margin-left: -100px !important;
-    width: 200px !important;
-    border: 2px rgba(255,255,255,.38) solid !important;
-    border-radius: 4px !important;
-}
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-82384246-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-.en-markup-crop-options div div:first-of-type {
-    margin-left: 0px !important;
-}
-</style>
-
+    <script type="text/javascript">var ST = strVar; strVar = "";</script>
+    <script type="text/javascript">strVar += '<div><div class="join"><div style=""><div style="background-image:url(image/phone.png);width:21px;height:21px;background-position:-187px -105px;margin-right:5px;float:left"></div><span>(+86)02138284633</span></div><div style="margin-top:3px"><div style="background-image:url(image/phone.png);width:21px;height:21px;background-position:-161px -105px;margin-right:5px;float:left"></div><span><a href="mailto:chenxinqiang@stu.shmtu.edu.cn"><b>chenxinqiang@stu.shmtu.edu.cn</b></a></span></div></div></div>\n'</script>
+    <script type="text/javascript">var JU = strVar; strVar = "";</script>
+    <script type="text/javascript">strVar += "<div><h3>research interests</h3><ul><li>transportation image processing</li><li>intelligent maritime visual perception</li><li>transportation data mining</li><li>vision-aided autonomous vehicle navigatio</li><li>smart port and machine learning</li></ul></div>\n"</script>
+    <script type="text/javascript">var RI = strVar; strVar = "";</script>
+    <!--主页面内容-->
 </head>
-<body ryt12610="1"> 
+<body>
+    <div id="top">
+        <div class="navigation0" style="margin-left:21%" onclick="choice('0')"><h3>Home</h3></div>
+        <div class="navigation1" onclick="choice('1')"><h3>Biography</h3></div>
+        <div class="navigation2" onclick="choice('2')"><h3>Education & Experience</h3></div>
+        <div class="navigation3" onclick="choice('3')"><h3>Selected publications</h3></div>
+        <div class="navigation6" onclick="choice('6')"><h3>reaserch interest</h3></div>
+        <div class="navigation4" onclick="choice('4')"><h3>Student</h3></div>
 
-<div id="layout-content" style="margin-top:15px">
-
-<table>
-  <tbody>
-    <tr>
-      <td width="800">
-        <div id="toptitle">
-          <h1>Xinqiang Chen (陈信强) <img src="./imgs/imgUW.jpg" width="100"  align="center" ></h1>
-		  
-		</div>
-	
-		
-        <h3>Ph.D &nbsp; Assitant Professor &nbsp; Master Supervisor</a></h3>
-        <p>
-          Institute of Logistics Science and Engineering <br>
-          Shanghai Maritime University <br>
-          Shanghai, China<br>
-                 <a href='https://scholar.google.com/citations?user=wMI8EpAAAAAJ&hl=en&oi=ao'>Google Scholar</a> &nbsp; &nbsp;
-		 <a href="mailto:chenxinqiang@stu.shmtu.edu.cn">Email</a> &nbsp; &nbsp;		 
-		 <a href="https://www.researchgate.net/profile/Xinqiang_Chen">Researchgate </a> 
-		 
-        </p>
-      </td>
-      <!--<td>
-        <img src="./images/xinqiang.jpg" border="0" width="400">
-      </td>-->
-    </tr><tr>
-  </tr></tbody>
-</table>
-
-<h2>Biography</h2>
-  Xinqiang Chen received his Ph.D. degree (2018) majoring at traffic information engineering and controlling from Shanghai Maritime University, Shanghai, China. Now he serves as an Assitant Professor and master supervisor at Institute of Logistics Science and Engineering at Shanghai Maritime University. Moreover, he serves as the research associate at Institute of Atmospheric Sciences, Fudan University. 
-From September, 2015 to September, 2016, he was a visiting Ph.D student in Smart Transportation Applications and Research Laboratory (STAR Lab), University of Washington, Seattle, WA, USA. He serves as a guest editor for three SCI-indexed journals, editorial board member for 6 international journals and technical program committee for 6 international conferences. His research interests include  transportation image processing, intelligent maritime visual perception, transportation data mining, vision-aided autonomous vehicle navigation, smart port and machine learning, etc.
-
-  </p>
-  
-</p>
-
-<h2>Education & Experience</h2>
-<ul>
-<li>
-  2020.05 - Present&nbsp;&nbsp;&nbsp;&nbsp;<b>Fudan University</b>
-  </li>
-  <b>Research Associate</b>, Institute of Atmospheric Sciences 
-
-  <li>
-  2018.07 - Present&nbsp;&nbsp;&nbsp;&nbsp;<b>Shanghai Maritime University</b>
-  </li>
-  <b>Assitant Professor</b>, Institute of logistics science and engineering 
-
-  <li>
-  2013.09 - 2018.06&nbsp;&nbsp;&nbsp;&nbsp;<b>Shanghai Maritime University</b>
-  </li>
-  <b>Ph.D. Candidate</b>, Merchant Marine College 
-	
-  <li>
-  2015.09 - 2016.09&nbsp;&nbsp;&nbsp;&nbsp;<b>University of Washington</b>
-  </li>
-  <b>Visting Ph.D.</b>, Department of Civil Environmetanl and Engineering 
-	
-  <li>
-  2010.09 - 2012.07&nbsp;&nbsp;&nbsp;&nbsp;<b>Shanghai Maritime University</b>
-  </li>
-  <b>Master</b>, Merchant Marine College 	
-	
-</ul>
-
-<h2>Selected publications</h2>
-  <p>&nbsp;&nbsp;&nbsp;(Video maybe adjusted into different length for different reseach purposes. Please cite our publications if you find the paper or data may benefit your research) </p>
-
-&nbsp;&nbsp;<li><b>Xiqiang Chen</b>, Zhibin Li, Yongsheng Yang, et al. (2021) High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos. IEEE Transactions on Intelligent Transportation Systems, 22(5): 3190-3202.</b>  </li>    
- &nbsp;&nbsp;</li>
-
-&nbsp;&nbsp;<li><b>Xiqiang Chen</b>, Yongsheng Yang, Shengzheng Wang, et al. (2020) Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network. Journal of Navigation, 73(4),813-832.(ESI)</b>  </li>    
-&nbsp;&nbsp;<li>  <b>Xiqiang Chen</b>, Shengzheng Wang, Chaojian Shi, et al. (2019)Robust ship tracking via multi-view learning and sparse representation. Journal of Navigation, 72(1): 176-192. (ESI)</b>  <a href="https://www.researchgate.net/publication/327632766_Robust_Ship_Tracking_via_Multi-view_Learning_and_Sparse_Representation"> labeled ship data </a> </li>   
- 
-&nbsp;&nbsp;<li>
-<b>Xinqiang Chen</b>, Xueqian Xu, Yongsheng Yang, et al. (2020) Visual Ship Tracking via a Hybrid Kernelized Correlation Filter and Anomaly Cleansing Framework. Applied Ocean Research, 106(2021): 1-10.</b></li>
+        <div class="navigation5" onclick="choice('5')"><h3>Join us</h3></div>
 
 
-&nbsp;&nbsp;<li>  <b>Xiqiang Chen</b>, Shubo Wu, Chaojian Shi, et al. (2020) Sensing Data Supported Traffic Flow Prediction via Denoising Schemes and ANN: A Comparison. IEEE Sensors Journal, 20(23): 14317-14328.</b>  </li>   
- 
-
-<h2><a href="./CVs/EnglishCV.pdf">CV in Enghlish </a> &nbsp;&nbsp;&nbsp;&nbsp;  <a href="./CVs/ChineseCV.pdf">CV in Chinese </a> </h2>
+    </div>
 
 
 
-<!--
-<h2>Projects</h2>
-<ul>
-  <li>
-    <a href="./hci/index.html">Non-Contact Human Computer Interaction (NC-HCI) System<br></a>
-    <em>NextGen Human Computer Interaction Lab</em> (<b>NGHCI</b>), 2013 -2015 <br>
-  </li>
-  <li>
-    <a href="./hci/index.html">Non-Contact Human Computer Interaction (NC-HCI) System<br></a>
-    <em>NextGen Human Computer Interaction Lab</em> (<b>NGHCI</b>), 2013 -2015 <br>
-  </li>
-</ul>
--->
+    <div id="main">
+        <script type="text/javascript">
+            switch (mapTo) {
+                case '0':
+                    loadStyleStrin("#declare{position: absolute;} #map{bottom: 10px;position: absolute;} #top .navigation0{background-color: white;color: #2d78ad;}");
+                    document.write(home); break;
+                case '1':
+                    loadStyleStrin("#declare{position: absolute;} #map{bottom: 10px;position: absolute;}  #top .navigation1{background-color: white;color: #2d78ad;}");
+                    document.write(Biography); break;
+                case '2': loadStyleStrin("#declare{position: absolute;} #map{bottom: 10px;position: absolute;}   #top .navigation2{background-color: white;color: #2d78ad;}"); document.write(EE); break;
+                case '3': loadStyleStrin("#top .navigation3{background-color: white;color: #2d78ad;}"); document.write(SP); break;
+                case '4': loadStyleStrin("#top .navigation4 {background-color: white;color: #2d78ad;}");  document.write(ST); break;
+                case '5': loadStyleStrin("#declare{position: absolute;}#map{bottom: 10px;position: absolute;} #top .navigation5{background-color: white;color: #2d78ad;}"); document.write(JU); break;
+                case '6': loadStyleStrin("#top .navigation6 {background-color: white;color: #2d78ad;} #declare{position: absolute;}#map{bottom: 10px;position: absolute;}"); document.write(RI); break;
+            }
+        </script>        
+    </div>
+    <div id="map">
 
-<!--
-	  [<a href='https://github.com/caibolun/DSN/archive/master.zip'>Code</a>]
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=m9D0cp6xtc9kGeiW-RAplmhcz0__zTYuqq4JZYNSCGw&cl=ffffff&w=a"></script>
 
-    </p>
-  </li>
-</ul>
-<h2>Publications (* represents corresponding author)<small>[<a href="https://scholar.google.com/citations?user=wMI8EpAAAAAJ&hl=en&oi=a">Google Scholar</a>]  </small></h2>
-
-<ul>
-    <li>
-    <a href="https://www.cambridge.org/core/journals/journal-of-navigation/article/robust-ship-tracking-via-multiview-learning-and-sparse-representation/74C5C99A6817279C0518BCED0B3A0021">Robust ship tracking via multi-view learning and sparse representation<br></a>
-	<b>Xinqiang Chen</b>, Shengzheng Wang, Chaojian Shi, et al.<br>
-    <em>Journal of Navigation</em> (<b>JON</b>), 2019<br>
-    <p style="margin-top:3px">
--->
-
-	  <!--[<a href="./deepdecolor/index.html">Project</a>] -->
-<!--     [<a href="./papers/robust ship tracking.pdf">Paper</a>]
-	  
-	  
-      <!--[<a href='./deepdecolor/deepdecolor_poster.pdf'>Poster</a>]-->
-      <!--[<a href='https://github.com/caibolun/deepdecolor/archive/master.zip'>Code</a>]
--->
-
-<!--    </p>
-  </li>
-	<li>
-    <a href="https://ieeexplore.ieee.org/document/8237693">Anomaly Detection and Cleaning of Highway Elevation Data from Google Earth Using Ensemble Empirical Mode Decomposition<br></a>
-	<b>Xinqiang Chen</b>, Zhibin Li, Yinhai Wang*, et al.<br>
-    <em>IEEE International Conference on Computer Vision</em> (<b>ICCV</b>), 2017  <br>
-    <p style="margin-top:3px">
-	  [<a href="./JieP/index.html">Project</a>]
-      [<a href="./papers/JieP.pdf">Paper</a>]
-	  [<a href='./JieP/JieP_poster.pdf'>Poster</a>]
-	  [<a href='https://github.com/caibolun/JieP/archive/master.zip'>Code</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://ieeexplore.ieee.org/document/7539399/">DehazeNet: An End-to-End System for Single Image Haze Removal<br></a>
-	<b>Bolun Cai</b>, Xiangmin Xu, Kui Jia, Chunmei Qing, Dacheng Tao.<br>
-    <em>IEEE Transactions on Image Processing</em> (<b>TIP</b>), 2016 [<font class="highlight">NOTE! </font>Highly Cited & Hot Paper]<br>
-    <p style="margin-top:3px">
-	  [<a href="./DehazeNet/index.html">Project</a>]
-      [<a href='./papers/DehazeNet.pdf'>Paper</a>]
-      [<a href='./DehazeNet/DehazeNet_poster.pdf'>Poster</a>]
-	  [<a href='https://github.com/caibolun/DehazeNet/archive/master.zip'>Code</a>]
-	  [<a href='https://github.com/PaddlePaddle/Paddle/blob/362a14d777ec795f1f6b397c1039ebb594050a10/doc/api/v2/config/activation.rst#brelu'>BReLU(Paddle)</a>]
-	  [<a href='https://github.com/torch/nn/blob/master/doc/transfer.md#hardtanh'>HardTanh(Torch)</a>]
-
-    </p>
-  </li>
-  <li>
-    <a href="http://ieeexplore.ieee.org/document/7387745/">BIT: Biologically Inspired Tracker</a><br>
-    <b>Bolun Cai</b>, Xiangmin Xu, Xiaofen Xing, Kui Jia, Jie Miao, Dacheng Tao.<br>
-    <em>IEEE Transactions on Image Processing</em> (<b>TIP</b>), 2016  <br>
-    <p style="margin-top:3px">
-      [<a href="./BIT/index.html">Project</a>]
-      [<a href='./papers/BIT_TIP.pdf'>Paper</a>]
-	  [<a href='./BIT/BIT_poster.pdf'>Poster</a>]
-	  [<a href='https://github.com/caibolun/BIT/archive/master.zip'>Code</a>]
-    </p>
-  </li>
-  <li>
-    <a href="https://ieeexplore.ieee.org/document/8296281/">Edge/Structure Preserving Smoothing via Relativity-of-Gaussian<br></a>
-	<b>Bolun Cai</b>, Xiaofen Xing, Xiangmin Xu.<br>
-    <em>IEEE International Conference on Image Processing</em> (<b>ICIP</b>), 2017 [<font class="highlight">NOTE! </font>Best Paper Finalist]<br>
-    <p style="margin-top:3px">
-	  [<a href="./RoG/index.html">Project</a>]
-      [<a href="./papers/RoG.pdf">Paper</a>]
-	  [<a href="./RoG/RoG_slide.ppsx">Slides</a>]
-	  [<a href='https://github.com/caibolun/RoG/archive/master.zip'>Code</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://link.springer.com/chapter/10.1007/978-3-319-48896-7_31">Real-time Video Dehazing based on Spatio-temporal MRF<br></a>
-	<b>Bolun Cai</b>, Xiangmin Xu, Dacheng Tao.<br>
-    <em>Pacific-Rim Conference on Multimedia</em> (<b>PCM</b>), 2016 [<font class="highlight">NOTE! </font>Best Student Paper]<br>
-    <p style="margin-top:3px">
-	  [<a href="./st-mrf/index.html">Project</a>]
-      [<a href="./papers/ST_MRF.pdf">Paper</a>]
-	  [<a href="./st-mrf/STMRF_slides.pdf">Slides</a>]
-	  [<a href='https://github.com/caibolun/ST-MRF/archive/master.zip'>Code</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://ieeexplore.ieee.org/document/7351323/">BIT: Bio-inspired Tracker</a><br>
-    <b>Bolun Cai</b>, Xiangmin Xu, Xiaofen Xing, Chunmei Qing.<br>
-    <em>IEEE International Conference on Image Processing</em> (<b>ICIP</b>), 2015  <br>
-    <p style="margin-top:3px">
-	  [<a href="./BIT/index.html">Project</a>]
-      [<a href='./papers/BIT_ICIP.pdf'>Paper</a>]
-	  [<a href='./papers/BIT_ICIP_poster.pdf'>Poster</a>]
-	  [<a href='https://github.com/caibolun/BIT/archive/master.zip'>Code</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://ieeexplore.ieee.org/document/6923838/">Bio-inspired Model with Dual Visual Pathways for Human Action Recognition<br></a>
-    <b>Bolun Cai</b>, Xiangmin Xu, Chunmei Qing.<br>
-    <em>International Symposium on Communication Systems, Networks & Digital Signal Processing</em> (<b>CSNDSP</b>), 2014  <br>
-    <p style="margin-top:3px">
-      [<a href="papers/BIM_STIP.pdf">Paper</a>]
-	  [<a href="papers/BIM_STIP_slide.pdf">Slides</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://ieeexplore.ieee.org/document/6385022/">A Coarse-to-Fine Approach for Motion Pattern Discovery<br></a>
-    <b>Bolun Cai</b>, Zhifeng Luo, Kerui Li.<br>
-    <em>International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery</em> (<b>CyberC</b>), 2012  <br>
-    <p style="margin-top:3px">
-      [<a href="papers/cyberc12.pdf">Paper</a>]
-	  [<a href="papers/cyberc12_slide.pdf">Slides</a>]
-    </p>
-  </li>
-  <li>
-    <a href="https://dl.acm.org/citation.cfm?id=3266311">Multi-modality Hierarchical Recall based on GBDTs for Bipolar Disorder Classification<br></a>
-    Xiaofen Xing, <b>Bolun Cai</b>, Yinhu Zhao, Shuzhen Li, Zhiwei He, Weiquan Fan.<br>
-    <em>Audio/Visual Emotion Challenge and Workshop, ACM Multimedia Conference </em>, 2018 [<font class="highlight">NOTE! </font>The First Place]<br>
-    <p style="margin-top:3px">
-      [<a href="https://github.com/caibolun/AVEC-BDS2018">Project</a>]
-      [<a href="./papers/BDS.pdf">Paper</a>]
-      [<a href="./papers/BDS_slide.pdf">Slides</a>]
-      [<a href='https://github.com/caibolun/AVEC-BDS2018/archive/master.zip'>Code</a>]
-    </p>
-  </li>
-  <li>
-    <a href="https://link.springer.com/chapter/10.1007/978-3-030-00563-4_39">Local-Global Extraction Unit for Person Re-identification<br></a>
-    Peng Wang, Chunmei Qing, Xiangmin Xu, <b>Bolun Cai</b>, Jianxiu Jin, Jinchang Ren.<br>
-    <em>International Conference on Brain Inspired Cognitive Systems</em> (<b>ICBICS</b>), 2018<br>
-    <p style="margin-top:3px">
-      [<a href="papers/LGEU.pdf">Paper</a>]
-    </p>
-  </li>
-
-    <li>
-    <a href="https://ieeexplore.ieee.org/abstract/document/8486460/">Learning Adaptive Selection Network for Real-time Visual Tracking<br></a>
-	 Jiangfeng Xiong, Xiangmin Xu, <b>Bolun Cai</b>, Xiaofen Xing, Kailing Guo.<br>
-    <em>IEEE International Conference on Multimedia and Expo</em> (<b>ICME</b>), 2018<br>
-    <p style="margin-top:3px">
-      [<a href="papers/ASNT.pdf">Paper</a>]
-    </p>
-  </li>
-
-    <li>
-    <a href="#">Style Transfer at 100+ FPS via Sub-pixel Super-resolution<br></a>
-	 Haoyu Li, Xiangmin Xu, <b>Bolun Cai</b>, Kailing Guo.<br>
-    <em>IEEE International Conference on Multimedia and Expo</em> (<b>ICME</b>), 2018<br>
-    <p style="margin-top:3px">
-      [<a href="#">Paper</a>]
-    </p>
-  </li>
-
-  <li>
-    <a href="https://arxiv.org/abs/1706.08098">FReLU: Flexible Rectified Linear Units for Improving Convolutional Neural Networks<br></a>
-	 Suo Qiu, Xiangmin Xu, <b>Bolun Cai</b>.<br>
-    <em>IEEE International Conference on Pattern Recognition</em> (<b>ICPR</b>), 2018<br>
-    <p style="margin-top:3px">
-      [<a href="./papers/FReLU.pdf">Paper</a>]
-    </p>
-  </li>
-
-<li>
-    <a href="https://link.springer.com/chapter/10.1007/978-3-319-77380-3_15">Single Image Super-Resolution Using Multi-Scale Convolutional Neural Network<br></a>
-	Xiaoyi Jia, Xiangmin Xu, <b>Bolun Cai</b>, Kailing Guo.<br>
-    <em>Pacific-Rim Conference on Multimedia</em> (<b>PCM</b>), 2017<br>
-    <p style="margin-top:3px">
-      [<a href="./papers/MSSR.pdf">Paper</a>]
-    </p>
-  </li>
-  <li>
-    <a href="https://ieeexplore.ieee.org/document/8296324/">Multi-scale Convolutional Neural Networks for Crowd Counting<br></a>
-	Lingke Zeng, Xiangmin Xu, <b>Bolun Cai</b>, Suo Qiu, Tong Zhang.<br>
-    <em>IEEE International Conference on Image Processing</em> (<b>ICIP</b>), 2017 <br>
-    <p style="margin-top:3px">
-      [<a href='./papers/MSCNN.pdf'>Paper</a>]
-    </p>
-  </li>
-  <li>
-    <a href="https://link.springer.com/chapter/10.1007/978-981-10-8530-7_3">Joint Latent Space and Multi-View Feature Learning<br></a>
-	Kailing Guo, Xiangmin Xu, <b>Bolun Cai</b>, Tong Zhang.<br>
-    <em>International Conference on Internet Multimedia Computing and Service </em> (<b>ICIMCS</b>), 2017<br>
-    <p style="margin-top:3px">
-      [<a href="./papers/MVGoDec.pdf">Paper</a>]
-    </p>
-  </li>
-  <li>
-    <a href="https://link.springer.com/chapter/10.1007/978-981-10-8530-7_40">Progressive Lifelong Learning by Sharing Representations for Few Labeled Data <br></a>
-	Guoxi Su, Xiangmin Xu, Chaowen Chen, <b>Bolun Cai</b>, Chunmei Qing.<br>
-    <em>International Conference on Internet Multimedia Computing and Service </em> (<b>ICIMCS</b>), 2017<br>
-    <p style="margin-top:3px">
-      [<a href="./papers/PLLA.pdf">Paper</a>]
-    </p>
-  </li>
-  <li>
-    <a href="https://ieeexplore.ieee.org/document/8276888/">Face Verification Based on Feature Transfer via PCA-SVM Framework<br></a>
-	Xiaofen Xing, Guicong Xu, <b>Bolun Cai</b>, Chunmei Qing, Xiangmin Xu.<br>
-    <em>IEEE International Conference on Smart Data</em> (<b>SmartData</b>), 2017 <br>
-    <p style="margin-top:3px">
-      [<a href='./papers/PCASVM_Face.pdf'>Paper</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://ieeexplore.ieee.org/abstract/document/7805512/">Image and Video Dehazing using View-based Cluster Segmentation<br></a>
-	Feng Yu, Chunmei Qing, Xiangmin Xu, <b>Bolun Cai</b>.<br>
-    <em>IEEE International Conference on Visual Communications and Image Processing</em> (<b>VCIP</b>), 2016 <br>
-    <p style="margin-top:3px">
-      [<a href='./papers/VCS.pdf'>Paper</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://link.springer.com/chapter/10.1007/978-3-319-48896-7_22">Exploiting Local Feature Fusion for Action Recognition<br></a>
-	Jie Miao, Xiangmin Xu, Xiaoyi Jia, Haoyu Huang, <b>Bolun Cai</b>, Chunmei Qing, Xiaofen Xing.<br>
-    <em>Pacific-Rim Conference on Multimedia</em> (<b>PCM</b>), 2016 <br>
-    <p style="margin-top:3px">
-      [<a href="./papers/LFF.pdf">Paper</a>]
-    </p>
-  </li>
-  <li>
-    <a href="http://ieeexplore.ieee.org/document/7251890/">Multi-invariance appearance model for object tracking<br></a>
-    Guicong Xu, Xiangmin Xu, Xiaofen Xing, <b>Bolun Cai</b>, Chunmei Qing.<br>
-    <em>IEEE International Conference on Digital Signal Processing</em> (<b>DSP</b>), 2015  <br>
-    <p style="margin-top:3px">
-      [<a href="papers/MCT.pdf">Paper</a>]
-	  [<a href="papers/tracker.pdf">Report</a>]
-    </p>
-  </li>
-</ul>
-<h2>Theses</h2>
-<ul>
-	<li>
-    <a href="http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFDTEMP&filename=1016770578.nh">Object Tracking Based on Biologically Inspired Model<br></a>
-	<b>Bolun Cai</b><br>
-    A Dissertation of Master, <em>South China University of Technology</em> (<b>SCUT</b>), 2016  <br>
-    <p style="margin-top:3px">
-	  [<a href="./papers/BIT.caj">CAJ</a>]
-      [<a href="./papers/BIT.pdf">PDF</a>]
-    </p>
-  </li>
-  <li>
-    <a href="./papers/BIM_STF.pdf">Biologically Inspired Model based Spatio-temporal Feature Extraction<br></a>
-	<b>Bolun Cai</b><br>
-    A Dissertation of Bachelor, <em>South China University of Technology</em> (<b>SCUT</b>), 2013 [<font class="highlight">NOTE! </font>Excellent Graduated Thesis] <br>
-    <p style="margin-top:3px">
-	  [<a href="./papers/BIM_STF.pdf">Paper</a>]
-    </p>
-  </li>
-</ul>
-<h2>Professional Activities</h2>
-<h4>Journal Reviewer</h4>
-<li><em>IEEE Transactions on Image Processing</em> (<b>TIP</b>)</li>
-<li><em>IEEE Transactions on Circuits and Systems for Video Technology</em> (<b>TCSVT</b>)</li>
-<li><em>IEEE Transactions on Multimedia</em> (<b>TMM</b>)</li>
-<li><em>Neurocomputing</em> (<b>NC</b>)</li>
-<li><em>PLoS One</em></li>
-<h4>Conference Reviewer</h4>
-<li><em>International Conference on Pattern Recognition</em> (<b>ICPR</b>) 2018</li>
-<div id="footer">
-  <div id="footer-text"></div>
-</div>
-</div>
-
-	<div align="center">Last updated on May 4, 2019</div>
-<p>
-</p>
-<div align="center">This site has been visisted <a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3202265&c=9607108" alt="AmazingCounters.com"></a> times.</div>
--->
-<div align="center">Last updated on May. 16, 2021</div>
+    </div>
+    <div id="declare">
+        Last updated on Jul. 2, 2021
+    </div>
 </body>
-
-
 </html>
