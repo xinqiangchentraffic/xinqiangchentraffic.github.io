@@ -1,11 +1,11 @@
-* {
-    margin: 0px;
-    padding:0px;
-}
+
 body {
     /*background-image:url(./image/0.jpg);background-color:Gray;*/
     margin: 0;
     float: none;
+    width: 1536px;
+    font-family:'Times New Roman';
+    
 }
 
 h3{
@@ -27,10 +27,10 @@ h3{
 }
 
 #map {
-    width: 30%;
+    width: 460px;
     /*overflow: hidden;border-radius: 10px;*/
     float: none;
-    margin-left: 35%;
+    margin-left: 537px;
     background-color: #2d78ad;
     margin-top: 150px;
 }
@@ -43,7 +43,7 @@ h3{
     text-align: center;
     background-color: #2d78ad;
     bottom: 0;
-    width: 100%;
+    width: 1536px;
     /*position: absolute;*/
     color: white;
 }
