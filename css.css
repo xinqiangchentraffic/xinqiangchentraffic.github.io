@@ -73,7 +73,10 @@ ul {
 #left, .top div:hover .lab {
     display: block;
 }
-
+.join{
+    height:400px;
+    margin:20px;
+}
 #left, top div .join, .lab {
     display: none;
     position: absolute;
