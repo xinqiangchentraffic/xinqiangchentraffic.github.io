@@ -1,0 +1,18 @@
+body{
+    min-width:1280px;
+    max-width:1536px;
+}
+#main{
+    width:54%;
+    min-width:500px;
+    margin-left:23%;
+    position:relative;
+
+}
+.name {
+    text-align:center;
+}
+.image{
+    position:absolute;
+    right:0%;
+}
