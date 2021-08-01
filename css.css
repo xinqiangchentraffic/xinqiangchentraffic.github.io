@@ -33,15 +33,20 @@ h3 {
     background-color: #2d78ad;
     margin-top: 150px;
 }
-#RecuritingNews {
+#RecruitingNews {
 	   
-    width: 460px;
+    width: 800px;
     font-family: 'Times New Roman';
     /*overflow: hidden;border-radius: 10px;*/
     float: none;
-    margin-left: 537px;
-    background-color: #2d78ad;
-    margin-top: 150px;
+    font-size: 20px;
+        
+    background-color: white;
+    margin-top: 5px;
+margin-left: 350px;
+width: 870px;
+ font-weight: bold;
+    color: black;
 }
 
 #declare {
@@ -59,15 +64,14 @@ h3 {
 #inforUpdate {
     padding-top: 0px;
     /*margin-bottom: 2px;*/
-    font-size: smaller;
+   font-size: 20px;
     font-weight: 500;
     font-family: 'Times New Roman';
     text-align: center;
-    background-color: #2d78ad;
-    bottom: 0;
+    background-color: white; 
     width: 1536px;
     /*position: absolute;*/
-    color: white;
+    color: black;
 }
 
 .menber { /*实验室成员介绍样式*/
