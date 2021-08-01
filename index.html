@@ -73,11 +73,8 @@
         <div class="navigation2" onclick="choice('2')"><h3>Education & Experience</h3></div>
         <div class="navigation3" onclick="choice('3')"><h3>Publications</h3></div>
         <div class="navigation6" onclick="choice('6')"><h3>Reaserch Interest</h3></div>
-        <div class="navigation4" onclick="choice('4')"><h3>Student</h3></div>
-
+        <div class="navigation4" onclick="choice('4')"><h3>Member</h3></div>
         <div class="navigation5" onclick="choice('5')"><h3>Join us</h3></div>
-
-
     </div>
 
 
@@ -107,7 +104,15 @@
     <div id="declare">
         Last updated on Jul. 31, 2021
     </div>
-
+  <div id="informationUpdate">
+        <script>
+        var date = new Date()<!--获得日期数据-->
+        var y = date.getFullYear();<!--年-->
+        var m = date.getMonth()+1;<!--月，这里的月份必须要+1才是当前月份-->
+        var d = date.getDate(); <!--日，getDay是获得当前星期几（0-6），getDate是获得当前日期-->
+        document.getElementById("informationUpdate").innerHTML = "last updated on "+y+"-"+m+"-"+d;
+    </script>
+    </div>
 </body>
 </html>
 
