@@ -28,11 +28,11 @@ h5 {
     }
 
 #map {
-        width: 500px;
+        width: 390px;
       font-family: 'Times New Roman';
     /*overflow: hidden;border-radius: 10px;*/
     float: none;
-    margin-left: 50px;
+    margin-left: 300px;
     background-color: #2d78ad;
     margin-bottom: 50px;
 }
