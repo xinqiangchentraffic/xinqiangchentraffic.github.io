@@ -56,11 +56,11 @@ h5 {
    font-size: 22px;
     font-weight: 500;
     font-family: 'Times New Roman';
-    text-align: center;
+    text-align: left;
     background-color: white; 
     width: 1536px;
     /*position: absolute;*/
-    margin-left: 200px;
+    margin-left: 320px;
     color: black;
 }
 
