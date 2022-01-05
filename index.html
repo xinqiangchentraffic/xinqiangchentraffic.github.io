@@ -63,7 +63,9 @@
         console.log(window.screen.height.toString());
         console.log(LAST_DATA);
         var a = "";
-        if (INNERWIDTH_NUM <= 1436 && INNERWIDTH_NUM >= 1300) {
+        if (INNERWIDTH_NUM > 1436) {
+
+        } else if (INNERWIDTH_NUM <= 1436 && INNERWIDTH_NUM >= 1300) {
             a = "body{min-width:" + 1300 + "px;}#main{margin-left: 13%;}#top .navigation0 {margin-left: 10%;}"
             loadStyleStrin(a)
         } else if (INNERWIDTH_NUM < 1300 && INNERWIDTH_NUM >= 900) {
