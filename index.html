@@ -69,6 +69,9 @@
         } else if (INNERWIDTH_NUM < 1300 && INNERWIDTH_NUM >= 900) {
             a = "body{min-width:" + 1080 + "px;}#main{margin-left: 13%;}#top .navigation0 {margin-left: 5%;}"
             loadStyleStrin(a)
+        } else {
+            a = "body{min-width:" + 900 + "px;}#main{margin-left: 5%;}#top .navigation0 {margin-left: 0%;}"
+            loadStyleStrin(a)
         }
         a = "body{min-height:" + Theight + "px;}";
         console.log(a);
