@@ -14,5 +14,7 @@ body{
 }
 .image{
     position:absolute;
+    width:157px;
+    height:220px;
     right:0%;
 }
