@@ -148,7 +148,7 @@ ul {
 }
 
     #LAB ul {
-        width: 300%; /*为了能循环循环播放两张图，所以最后要放第一图片，*/
+        width: 400%; /*为了能循环循环播放3张图，所以最后要放第一图片，*/
         height:auto/*750px*/;
         background: darkgray;
         animation: change 40s linear 0s infinite normal; /*动画元素，持续时间，速度，延迟时间，重复次数，是否往返*/
@@ -167,7 +167,7 @@ ul {
         }
 
         #LAB ul li {
-            width: 33%;
+            width: 25%;
             height: auto;
             list-style: none;
             float: left;
@@ -183,7 +183,7 @@ ul {
     }
 
     to {
-        margin-left: -200%; /*两个图片所以是200%*/
+        margin-left: -300%; /*3个图片所以是300%*/
     }
 }
 /*照片轮回滚动*/
