@@ -67,14 +67,6 @@ h5 {
         padding-left: 50px;
         }
 
-        .top_a{
-            color: white;
-            text-decoration: none;
-            
-        }
-        .top_a:hover {
-            text-decoration: underline;
-          }
         /* .top_a:link {
             color: white;
         } */
@@ -370,3 +362,12 @@ ul {
 #Biography{
     width: 85%;
 }
+
+.top_a{
+    color: white;
+    text-decoration: none;
+    
+}
+.top_a:hover {
+    text-decoration: underline;
+  }
