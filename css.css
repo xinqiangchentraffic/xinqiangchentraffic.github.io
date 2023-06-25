@@ -19,7 +19,7 @@ h5 {
     background-color: #2d78ad;
 }
 
-    #top .navigation0, .navigation1, .navigation2, .navigation3, .navigation4, .navigation5, .navigation6, .navigation7{
+    /* #top .navigation0, .navigation1, .navigation2, .navigation3, .navigation4, .navigation5, .navigation6, .navigation7{
         display: inline-block;
         padding-top: 4px;
         padding-bottom: 4px;
@@ -30,7 +30,54 @@ h5 {
     }
     #top .navigation0 {
         margin-left: 21%;
-    }
+    } */
+
+
+    #top .navigation0, .navigation1, .navigation2, .navigation3, .navigation4, .navigation5, .navigation6, .navigation7, .navigation8{
+        display: inline-block;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: white;
+        /* color: white; */
+        padding-right: 6px;
+        padding-left: 6px;
+        cursor: pointer;
+        
+        text-decoration: none;
+        border-bottom: 2px solid transparent;;
+        }
+        
+        /* #top .navigation00 {
+                margin-left: 15%;
+            } */
+        
+        #top .navigation00 {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 20px;
+        border-left: 2.5px solid white;
+        margin-left: 21%;
+        margin-right: 10px;
+        height: auto;
+        color: white;
+        }
+        
+        #top .navigation0 {
+        /* margin-left: 15%; */
+        padding-left: 50px;
+        }
+
+        .top_a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        .top_a:hover {
+            text-decoration: underline;
+          }
+        /* .top_a:link {
+            color: white;
+        } */
 
 #map {
         width: 200px;
@@ -193,6 +240,10 @@ ul {
     width: 100%;
     height: auto;
 }
+#STUDENTS a:visited, a:link{
+    color: black;
+    text-decoration: none;
+}
 
 #main_1 /*主部主*/ {
     /*background-color:#E6E6F2;*/
@@ -216,7 +267,7 @@ ul {
             text-decoration: none;
         }
 
-a:visited, a:link {
+.home_1:visited, .home_1:link {
     color: black;
 }
 
@@ -225,6 +276,10 @@ a:visited, a:link {
     width: 90%;
     border-radius: 10px;
     border-width: 2px;
+   
+}
+#main_2  a/*主部主*/ {
+    text-decoration: underline;
    
 }
 
@@ -298,4 +353,20 @@ a:visited, a:link {
     height: auto;
     list-style: none;
     text-align: center;
+}
+
+
+
+.lunbo{
+    width: 900px;
+    height: 400px;
+    margin:100px auto;
+    }
+.lunbo img{
+     width: 100%;
+    height:100%;
+}
+
+#Biography{
+    width: 85%;
 }
