@@ -363,11 +363,11 @@ ul {
     width: 85%;
 }
 
-.top_a{
+a.top_a{
     color: white;
     text-decoration: none;
     
 }
-.top_a:hover {
+a.top_a:hover {
     text-decoration: underline;
   }
