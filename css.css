@@ -427,11 +427,15 @@ a.top_a:hover {
     margin-right: 0px;
   }
 
+  .divider-publication{
+    margin-right: 8%;
+  }
+
 #Recent_papers ul{
     list-style-type: decimal;
-    text-align: justify
+    text-align: justify;
 }
 #Recent_papers ul li{
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
