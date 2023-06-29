@@ -371,3 +371,59 @@ a.top_a{
 a.top_a:hover {
     text-decoration: underline;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  .options-menu {
+    position: absolute;
+    top: 10px; /* 距离顶部的距离 */
+    right: 10px; /* 距离右侧的距离 */
+  }
+  
+  .options-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .options-menu ul li {
+    display: inline-block;
+    margin-left: 10px; /* 用于设置按钮之间的水平间距 */
+  }
+  
+  
+  .options-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block; /* 使链接元素变为块级元素 /
+    padding: 5px;
+    border-radius: 50%; / 设置圆形边框 /
+    background-color: #ccc; / 设置背景颜色 */
+  }
+  
+  
+  .options-menu ul li a:hover {
+  background-color: #aaa; /* 设置悬停时的背景颜色 */
+  }
+
+
+
+/*设置分隔线的右侧页边距*/
+  .divider-home {
+    margin-right: 150px;
+  }
+
+  .divider-members{
+    margin-right: 0px;
+  }
+

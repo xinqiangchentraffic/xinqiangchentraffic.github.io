@@ -107,6 +107,44 @@
     <!--主页面内容-->
 
 
+    
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        
+
+
+
+
+        <!-- <style>
+            .nav {
+                position: fixed;
+                top: 100px;
+                left: 80px;
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            li{
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                margin: 0 10px;
+                background: #fff;   /* 按钮的颜色 */
+                font-size: 18px;
+                color:#000
+            }
+
+            iframe {
+              width: 100vh;
+              height: 100vh; /* 将 iframe 元素的高度设置为视口的高度 */
+              border: none;
+            }
+        </style> -->
+
+
 
 
 
@@ -146,7 +184,40 @@
                 case '7': loadStyleStrin("#top .navigation7 {background-color: white;color: #2d78ad;}"); document.write(PJ); break;
             }
         </script> -->
-        <div id="main_2">
+        
+          <!-- <ul class="nav">
+            <li data-src="./html/page01.html">全部论文</li>
+            <li data-src="./html/page02.html">高被引论文</li>
+        </ul>
+        
+        <iframe src="" frameborder="0" id="iframe"></iframe>
+        <script>
+     
+            //有两种方法，推荐第二种
+            //方法一
+            //将地址放在数组中
+            let arr = ['./html/page01.html','./html/page02.html']
+            //获取iframe标签
+            let iframe = document.querySelector('#iframe')
+            //获取导航栏按钮
+            let lis = document.querySelectorAll('li')
+            //点击导航栏，改变Iframe的src属性，实现页面切换
+            for (let i = 0; i < lis.length; i++) {
+                //绑定点击事件
+                lis[i].onclick = function(event){
+                    //方法一
+                    // iframe.src = arr[i]
+                    //方法二 自定义属性
+                    iframe.src = event.target.dataset.src
+                }
+                
+            }
+        </script> -->
+
+
+
+
+
           <h1>
             Selected publications(部分发表的论文)
           </h1>
@@ -212,18 +283,20 @@
               </div>
             </li>
             <li>
+              <div style="float: left;">
               <img alt="" src="image/1-2.png" width="240" height="160" />
+              </div>              
               <div style="height: 160px">
                 <p>
-                  <a
+                  <a style="margin-left: 20px;"
                     href="file/Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network.pdf"
                     target="_blank"
                     >Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution
                     Neural Network</a
-                  ><br /><b>Xiqiang Chen</b>,Yongsheng Yang, Shengzheng Wang, et al<br />Journal
-                  of Navigation, 73(4),813-832.(ESI)<br />
+                  ><br /><b style="margin-left: 20px;">Xiqiang Chen</b>,Yongsheng Yang, Shengzheng Wang, et al<br /><a style="margin-left: 20px;">Journal
+                  of Navigation, 73(4),813-832.(ESI)</a><br />
                 </p>
-                <div class="abstract">
+                <div class="abstract" style="margin-left: 20px;">
                   ABSTRACT/
                   <div class="abstract_main">
                     <p>
@@ -382,12 +455,43 @@
               </div>
             </li>
           </ul>
-        </div>
-        
-        
+
+
+          <hr/>
+          <h1>
+            Recent papers(近三年论文)
+          </h1>
+
+          <div>
+            <ul>
+              <li>Xinqiang Chen, Zhibin Li, Yongsheng Yang, Lei Qi, Ruimin Ke (2021). "High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos" IEEE Transactions on Intelligent Transportation Systems, 22(5): 3190-3202.</li>
+              <li>Smart shipping</li>
+              <li>Large-scale transportation data mining</li>
+              <li>video data aided autonomous vehicle navigation</li>
+              <li>unmanned port</li>
+              <li>Traffic safety</li>
+              <li>the above list may vary along with research interest change</li>
+            </ul>
+          </div>
+          
+
 
 
     </div>
+
+
+
+        
+
+
+        
+
+        
+        
+        
+
+
+    <!-- </div> -->
         
         
 
