@@ -187,7 +187,7 @@ ul {
 }
 
     #LAB ul {
-        width: 700%; /*为了能循环循环播放3张图，所以最后要放第一图片，*/        /*400%表示容器容纳4张图片*/
+        width: 400%; /*为了能循环循环播放3张图，所以最后要放第一图片，*/        /*400%表示容器容纳4张图片*/
         height:auto;/*750px*/
         background: darkgray;
         animation: change 15s linear 0s infinite normal; /*动画元素，持续时间，速度，延迟时间，重复次数，是否往返*/
