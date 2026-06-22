@@ -1,20 +1,92 @@
-body{
-    min-width:1280px;
-    max-width:1536px;
+:root {
+  --ink: #10233f;
+  --muted: #5f718b;
+  --blue-950: #07182f;
+  --blue-800: #123c6b;
+  --blue-700: #155da2;
+  --line: rgba(21, 93, 162, 0.16);
+  --bg: #f4f8fd;
 }
-#main{
-    width:54%;
-    min-width:500px;
-    margin-left:23%;
-    position:relative;
 
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  min-width: 980px;
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(45, 141, 232, 0.16), transparent 30%),
+    linear-gradient(180deg, #eef6ff 0%, #f8fbff 48%, #eef4fb 100%);
+}
+
+body::before {
+  content: "MATLAB";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding-left: calc(50% - 470px);
+  line-height: 70px;
+  color: #fff;
+  font-weight: 800;
+  background: rgba(7, 24, 47, 0.92);
+}
+
+a {
+  color: var(--blue-700);
+}
+
+#main {
+  position: relative;
+  width: 940px;
+  min-height: 620px;
+  margin: 118px auto 56px;
+  padding: 42px 46px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 45px rgba(8, 31, 61, 0.12);
+}
+
 .name {
-    text-align:center;
+  margin: 0 0 8px;
+  padding-right: 220px;
+  color: var(--blue-950);
+  font-size: 34px;
+  line-height: 1.2;
+  text-align: left;
 }
-.image{
-    position:absolute;
-    width:157px;
-    height:220px;
-    right:0%;
+
+.image {
+  position: absolute;
+  top: 42px;
+  right: 46px;
+  width: 170px;
+  height: 230px;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--line);
+  background: #d8e5f4;
+}
+
+h2 {
+  margin: 28px 0 12px;
+  color: var(--blue-800);
+  font-size: 22px;
+}
+
+p,
+li {
+  color: #42546e;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  max-width: 650px;
+  padding-left: 22px;
 }

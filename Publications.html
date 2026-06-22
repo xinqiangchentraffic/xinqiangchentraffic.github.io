@@ -1,1012 +1,217 @@
-<html><head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <style type="text/css">
-        @import "css.css";
-    </style>
-    <title>Xinqiang Chen</title>
-
-
-
-    <script type="text/javascript">
-        //获取网页窗口大小
-        var Twidth = window.outerWidth.toString();
-        var INNERWIDTH_NUM = window.innerWidth
-        var Theight_Num = window.innerHeight;
-        var Theight = Theight_Num.toString();
-        var LAST_DATA = document.lastModified;
-        LAST_DATA = LAST_DATA.substring(0, 10);
-        console.log(INNERWIDTH_NUM);
-        console.log(window.screen.height.toString());
-        console.log(LAST_DATA);
-        var a = "";
-        if (INNERWIDTH_NUM > 1436) {
-
-        } else if (INNERWIDTH_NUM <= 1436 && INNERWIDTH_NUM >= 1300) {
-            a = "body{min-width:" + 1300 + "px;}#main{margin-left: 13%;}#top .navigation0 {margin-left: 10%;}"
-            loadStyleStrin(a)
-        } else if (INNERWIDTH_NUM < 1300 && INNERWIDTH_NUM >= 900) {
-            a = "body{min-width:" + 1080 + "px;}#main{margin-left: 13%;}#top .navigation0 {margin-left: 5%;}"
-            loadStyleStrin(a)
-        } else {
-            a = "body{min-width:" + 1050 + "px;}#main{margin-left: 6%;}#top .navigation0 {margin-left: 2%;}"
-            loadStyleStrin(a)
-        }
-        a = "body{min-height:" + Theight + "px;}";
-        console.log(a);
-        loadStyleStrin(a)
-
-
-        //定时轮播图片
-        setInterval(changeImage, 3000);
-          var lunbo = "";
-          strVar += "<div id=\"slideshow-container\"></div>";
-          var lunbo = strVar; strVar = "";
-        
-        // 添加图片轮播控件的事件处理函数
-        var index = 1;
-        function lunbo() {
-          index++;
-          if (index > 6) {
-            index = 1;
-          }
-          var img = document.getElementById("lunbo_img");
-          img.src = "./lunbo/img"+index+".jpg";
-        }
-        setInterval(lunbo, 2000);
-       // 插入图片轮播控件
-
-
-
-    </script><style type="text/css">body{min-height:990px;}</style>
-    <!--主页面内容-->
-
-
-
-
-
-    <script>var strVar = ""; strVar += "<h1>Xinqiang Chen (陈信强)<\/h1><div id=\"main_1\"><div><img src=\"./image/imgUW.jpg\" alt=\"头像\" width=\"180\" style=\"margin:20px\"><\/div><div><h2>Ph.D<br>Assistant Professor<br>Master Supervisor<\/h2><p>Institute of Logistics Science and Engineering<br>Shanghai Maritime University<br>Shanghai, China<br><\/p><div style=\"float:none;margin-bottom:4px\"><div style=\"background-image:url(image/ico.png);width:21px;height:21px;background-position:-69px -253px;margin-right:5px\"><\/div><span><a href=\"https://scholar.google.com/citations?user=wMI8EpAAAAAJ&amp;hl=en&amp;oi=ao\" target=\"_blank\"><b>Google Scholar<\/b><\/a><\/span><\/div><div style=\"float:none;margin-bottom:4px\"><div style=\"background-image:url(image/ico.png);width:21px;height:21px;background-position:-92px 1px;margin-right:5px\"><\/div><span><a href=\"mailto:chenxinqiang@stu.shmtu.edu.cn\"><b>E-mail<\/b><\/a><\/span><\/div><div style=\"float:none;margin-bottom:4px\"><div style=\"background-image:url(image/ico.png);width:21px;height:21px;background-position:1px -44px;margin-right:5px\"><\/div><span><a href=\"https://www.researchgate.net/profile/Xinqiang_Chen\" target=\"_blank\"><b>Researchgate<\/b><\/a><\/span><\/div><\/div><\/div><h5>Recruiting News:<marquee align=\"left\" behavior=\"scroll\" direction=\"left\" width=\"720\" loop scrollamount=\"10\" scrolldelay=\"120\" onmouseout=\"this.start()\">If you are interested in cooperating with me for master degree, please send me your detailed CV. Diligent and hard working students are prefered. More information can be found in Join us.<\/marquee><\/h5><div id=\"Lastupdata\"><ul><li><b>Last Updated:<script type=\"text/javascript\">document.write(LAST_DATA)<\/script><\/b><\/li><\/ul><\/div>\n";</script>
-
-
-    <script type="text/javascript">var home = strVar; strVar = ""</script>
-    <script type="text/javascript">strVar += '<h1><a id="Biography">Biography(个人简介)</a></h1>\n', strVar += '<p style="text-align:justify;text-indent:24px">  Xinqiang Chen received his Ph.D. degree (2018) majoring at traffic information engineering and controlling from Shanghai Maritime University, Shanghai, China. Now he serves as an Assistant Professor and master supervisor at Institute of Logistics Science and Engineering at Shanghai Maritime University. Moreover, he serves as the research associate at Institute of Atmospheric Sciences of Fudan University since 2020. From September, 2015 to September, 2016, he was a visiting Ph.D student in Smart Transportation Applications and Research Laboratory (STAR Lab), University of Washington, Seattle, WA, USA. He serves as a guest editor for four SCI-indexed journals ranking in Q1 and Q2. Besides, he is invited to be a reviewer for many top journals in transportation and computer vision field, such as IEEE Transactions on Intelligent Transportation Systems, IEEE Transactions on Neural Networks and Learning Systems, IEEE Transactions on Multimedia, etc. He has published over 50 papers in top journals and conferences since 2017. His research interests include visual data supported intelligent traffic environment perception, smart ship, video-aided autonomous vehicle navigation, large-scale transportation data mining, traffic safety, autonomous port, etc. The above list will grow or shrink along with the research interest variation. </p>\n<br /><h1><a href="CVs/EnglishCV.pdf" target="_blank">CV in Enghlish</a> <a href="CVs/ChineseCV.pdf" target="_blank">CV in Chinese</a></h1><div id=\"Lastupdata\"><ul><li><b>Last Updated:<script type=\"text/javascript\">document.write(LAST_DATA)<\/script><\/b><\/li><\/ul><\/div>', strVar += "\n"</script>
-    <script type="text/javascript">var Biography = strVar; strVar = ""</script>
-    <script type="text/javascript">strVar += '<h1><a id="Education & Experience">Education & Experience</a></h1><ul><li>2020.05 - Present <b>Fudan University<br>Research Associate</b>, Institute of Atmospheric Sciences</li><li>2018.07 - Present <b>Shanghai Maritime University<br>Assistant Professor</b>, Institute of logistics science and engineering</li><li>2013.09 - 2018.06 <b>Shanghai Maritime University<br>Ph.D. Candidate</b>, Merchant Marine College</li><li>2015.09 - 2016.09 <b>University of Washington<br>Visting Ph.D.</b>, Department of Civil Environmetanl and Engineering</li><li>2010.09 - 2012.07 <b>Shanghai Maritime University<br>Master</b>, Merchant Marine College</li></ul><div id=\"Lastupdata\"><ul><li><b>Last Updated:<script type=\"text/javascript\">document.write(LAST_DATA)<\/script><\/b><\/li><\/ul><\/div>'</script>
-    <script type="text/javascript">var EE = strVar; strVar = ""</script>
-    <script type="text/javascript">strVar += '<div id="main_2"><h1><a id="Selected publications">Selected publications(部分发表的论文)</a></h1><p><i>(Video maybe adjusted into different length for different reseach purposes. Please cite our publications if you find the paper or data may benefit your research)</i></p><ul id="public" style="list-style-type:none"><li><video width="240" height="160" autoplay loop muted><source src="./image/1-1.mp4"></video><div style="height:160px"><p><a href="file/High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos.pdf" target="_blank">High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos</a><br><b>Xinqiang Chen</b>,Zhibin Li, Yongsheng Yang, et al.<br>IEEE Transactions on Intelligent Transportation Systems, 22(5): 3190-3202<b>(Hot paper)</b><br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>In recent years, unmanned aerial vehicle (UAV) has become an increasingly popular tool for traffic monitoring and data collection on highways due to its advantage of low cost, high resolution, good flexibility, and wide spatial coverage. Extracting high-resolution vehicle trajectory data from aerial videos taken by a UAV flying over target highway segment becomes a critical research task for traffic flow modeling and analysis. This study aims at proposing a novel methodological framework for automatic and accurate vehicle trajectory extraction from aerial videos. The method starts by developing an ensemble detector to detect vehicles in the target region. Then, the kernelized correlation filter is applied to track vehicles fast and accurately. After that, a mapping algorithm is proposed to transform vehicle positions from the Cartesian coordinates in image to the Frenet coordinates to extract raw vehicle trajectories along the roadway curves. The data denoising is then performed using a wavelet transform to eliminate the biased vehicle trajectory positions. Our method is tested on two aerial videos taken on different urban expressway segments in both peak and non-peak hours on weekdays. The extracted vehicle trajectories are compared with manual calibrated data to testify the framework performance. The experimental results show that the proposed method successfully extracts vehicle trajectories with a high accuracy: the measurement error of Mean Squared Deviation is 2.301 m, the Root-mean-square deviation is 0.175 m, and the Pearson correlation coefficient is 0.999. The video and trajectory data in this study are publicly accessible for serving as benchmark at https://seutraffic.com.</p></div></div></div></li><li><img alt="" src="image/1-2.png" width="240" height="160"><div style="height:160px"><p><a href="file/Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network.pdf" target="_blank">Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network</a><br><b>Xinqiang Chen</b>,Yongsheng Yang, Shengzheng Wang, et al<br>Journal of Navigation, 73(4),813-832.(ESI)<br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Most previous research has handled the task of ship type recognition by exploring hand-craft ship features, which may fail to distinguish ships with similar visual appearances. This situation motivates us to propose a novel deep learning based ship type recognition framework which we have named coarse-to-fine cascaded convolution neural network (CFCCNN). First, the proposed CFCCNN framework formats the input training ship images and data, and provides trainable input data for the hidden layers of the CFCCNN. Second, the coarse and fine steps are run in a nesting manner to explore discriminative features for different ship types. More specifically, the coarse step is trained in a similar manner to the traditional convolution neural network, while the fine step introduces regularisation mechanisms to extract more intrinsic ship features, and fine tunes parameter settings to obtain better recognition performance. Finally, we evaluate the performance of the CFCCNN model for recognising the most common types of merchant ship (oil tanker, container, LNG tanker, chemical carrier, general cargo, bulk carrier, etc.). The experimental results show that the proposed framework obtains better recognition performance than the conventional methods of ship type recognition.</p></div></div></div></li><li><video width="240" height="160" autoplay loop muted><source src="./image/1-3.mp4"></video><div style="height:160px"><p><a href="file/Robust ship tracking via multi-view learning and sparse representation.pdf" target="_blank">Robust ship tracking via multi-view learning and sparse representation</a><br><b>Xinqiang Chen</b>,Shengzheng Wang, Chaojian Shi, et al.<br>Journal of Navigation, 72(1): 176-192. (ESI) <a href="https://www.researchgate.net/publication/327632766_Robust_Ship_Tracking_via_Multi-view_Learning_and_Sparse_Representation">labeled ship data</a><br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Conventional visual ship tracking methods employ single and shallow features for the ship tracking task, which may fail when a ship presents a different appearance and shape in maritime surveillance videos. To overcome this difficulty, we propose to employ a multi-view learning algorithm to extract a highly coupled and robust ship descriptor from multiple distinct ship feature sets. First, we explore multiple distinct ship feature sets consisting of a Laplacian-ofGaussian (LoG) descriptor, a Local Binary Patterns (LBP) descriptor, a Gabor filter, a Histogram of Oriented Gradients (HOG) descriptor and a Canny descriptor, which present geometry structure, texture and contour information, and more. Then, we propose a framework for integrating a multi-view learning algorithm and a sparse representation method to track ships efficiently and effectively. Finally, our framework is evaluated in four typical maritime surveillance scenarios. The experimental results show that the proposed framework outperforms the conventional and typical ship tracking methods.</p></div></div></div></li><li><img alt="" src="image/1-4.png" width="240" height="160"><div style="height:160px"><p><a href="file/Visual Ship Tracking via a Hybrid Kernelized Correlation Filter and Anomaly Cleansing Framework.pdf" target="_blank">Visual Ship Tracking via a Hybrid Kernelized Correlation Filter and Anomaly Cleansing Framework</a><br><b>Xinqiang Chen</b>,Xueqian Xu, Yongsheng Yang, et al.<br>Applied Ocean Research, 106(2021): 1-10.<br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Ship tracking from maritime visual sensing data (namely maritime surveillance videos) provides various kinematic maritime traffic information, which significantly benefits remote maritime traffic controlling and management, off-site law enforcement, etc. But, it is difficult to extract distinct ship visual features when the target ship is sheltered by the neighboring ship in the maritime images (or the images are shot in low visibility condition). To address the difficulty, we proposed a hybrid ship tracking framework via the help of kernelized correlation filter (KCF) and anomaly cleaning models (including curve fitting method and Kalman filter). First, we employed the KCF model to obtain raw ship trajectories in consecutive maritime images. Second, our ship tracker is accurately initialized (to be specific, ground truth ship position in the first frame is employed to initialize the ship tracker). Third, the Kalman filter is introduced to suppress the trivial ship position oscillations in the raw ship trajectories. We verified the proposed framework performance on the four typical maritime scenarios. The experimental results indicate that the proposed ship tracker showed more accurate ship tracking results compared to other four popular ship trackers in terms of average root mean square error (RMSE), mean absolute deviation (MAD) and mean square error (MSE). The research findings can help maritime traffic participants obtain visual on-spot maritime kinematic information, and thus further enhance maritime traffic safety.</p></div></div></div></li><li><img alt="" src="image/1-5.png" width="240" height="160"><div style="height:160px"><p><a href="file/Sensing Data Supported Traffic Flow Prediction via Denoising Schemes and ANN.pdf" target="_blank">Sensing Data Supported Traffic Flow Prediction via Denoising Schemes and ANN: A Comparison</a><br><b>Xinqiang Chen</b>,Shubo Wu, Chaojian Shi, et al.<br>IEEE Sensors Journal, 20(23): 14317-14328.<br></p><div class="abstract">ABSTRACT/<div class="abstract_main"><p>Short-term traffic flow prediction plays a key role of Intelligent Transportation System (ITS), which supports traffic planning, traffic management and control, roadway safety evaluation, energy consumption estimation, etc. The widely deployed traffic sensors provide us numerous and continuous traffic flow data, which may contain outlier samples due to expected sensor failures. The primary objective of the study was to evaluate the use of various smoothing models for cleaning anomaly in traffic flow data, which were further processed to predict short term traffic flow evolution with artificial neural network. The wavelet filter, moving average model, and Butterworth filter were carefully tested to smooth the collected loop detector data. Then, the artificial neural network was introduced to predict traffic flow at different time spans, which were quantitatively analyzed with commonly-used evaluation metrics. The findings of the study provide us efficient and accurate denoising approaches for short term traffic flow prediction.</p></div></div></div></li></ul></div><div id=\"Lastupdata\"><ul><li><b>Last Updated:<script type=\"text/javascript\">document.write(LAST_DATA)<\/script><\/b><\/li><\/ul><\/div>'</script>
-    <script type="text/javascript">var SP = strVar; strVar = ""</script>
-
-
-    <!--合照
-
-    <script type="text/javascript">strVar += '<div style=" width:110%"><h3>Group Photos and News</h3></div>'; strVar += '<div id="LAB"><ul><li><img src="image/Lab_1.jpg" class="OURLABIMG"> 1</li><li><img src="image/Lab_2.jpg" class="OURLABIMG"> 2</li><li><img src="image/Lab_1.jpg" class="OURLABIMG"> 1</li></ul></div>\n'</script>
-    -->
-    <!--师兄的图片
-
-    <script type="text/javascript">strVar += '<div style="width:110%"> 	<div class="menber"><img src="image/18huixingchen.jpg"><p>姓名：<a>陈辉兴(Huixing Chen)</a>（市优）</p><p>年级：2018级</p><p>籍贯：海南万宁</p><p>去向：工商银行(上海)</p><p>QQ:2281038739</p> </div> <div class="menber"><img src="image/18xueqianxu.jpg"><p>姓名：<a>许学谦(Xueqian Xu)</a>（市优）</p><p>年级：2018级</p><p>籍贯：甘肃天水</p><p>去向：武汉理工大学攻读博士</p><p>QQ:347117412</p></div>  	<div class="menber"><img src="image/18leiqi.jpg"><p>姓名：<a>齐 雷(Lei Qi)</a></p><p>年级：2018级</p><p>籍贯：安徽安庆</p><p>去向：上海小米金融服务信息有限公司</p><p>QQ:765893830</p></div>  	<div class="menber"><img src="image/19jinquanlu.jpg"><p>姓名：<a>陆锦泉(Jinquan Lu)</a>（市优）</p><p>年级：2019级</p><p>籍贯：广东佛山</p><p>去向：广东省城乡规划设计院</p><p>QQ:978684960</p></div> 	<div class="menber"><img src="image/19shubowu.jpg"><p>姓名：<a>吴淑博(Shubo Wu)</a></p><p>年级：2019级</p><p>籍贯：海南海口</p><p>研究方向：交通数据挖掘</p><p>QQ:1220430336</p></div>	<div class="menber"><img src="image/19junling.jpg"><p>姓名：<a target="_blank" href="students/凌峻.html">凌 峻(Jun Ling)</a></p><p>年级：2019级</p><p>籍贯：安徽芜湖</p><p>研究方向：图像处理，数据挖掘</p><p>QQ:1007811080</p>   </div><div class="menber"><img src="image/19leye.jpg"><p>姓名：<a>叶 乐 (Ye Le)</a></p><p>年级：2019级</p><p>籍贯：浙江金华</p><p>研究方向：海上小目标检测</p><p>QQ:732837590</p></div><div class="menber"><img src="image/20zichuangwang.jpg"><p>姓名：<a>王梓创 (Zichuang Wang)</a></p><p>年级：2020级</p><p>籍贯：广东揭阳</p><p>研究方向：基于视频的港口时空数据分析</p><p>QQ:1135508283</p></div> 	<div class="menber"><img src="image/20jinbiaozheng.jpg"><p>姓名：<a>郑金彪(Jinbiao Zheng)</a></p><p>年级：2020级</p><p>籍贯：安徽六安</p><p>研究方向：行为分析</p><p>QQ:1113258716</p></div>  	<div class="menber"><img src="image/20xianglongxu.jpg"><p>姓名：<a>徐祥龙 (Xianglong Xu)</a></p><p>年级：2020级</p><p>籍贯：山东临沂</p><p>研究方向：AIS数据挖掘</p><p>QQ:1396669626</p></div>   <div class="menber"><img src="image/20xingyuwu.jpg"><p>姓名：<a>吴星宇 (Xingyu Wu)</a></p><p>年级：2020级</p><p>籍贯：河北邯郸</p><p>研究方向：海事图像语义分割</p><p>QQ:179951276</p></div>  <div class="menber"><img src="image/20zhongweiyan.jpg"><p>姓名：<a>严忠伟(Zhongwei Yan)</a></p><p>年级：2020级</p><p>籍贯：山西吕梁</p><p>研究方向：AIS数据挖掘</p><p>QQ:1376062151</p> </div> <div class="menber"><img src="image/20feixiangshi.jpg"><p>姓名：<a>史飞翔(Feixiang Shi)</a></p><p>年级：2020级</p><p>籍贯：山东济宁</p><p>研究方向：AIS数据挖掘</p><p>QQ:1606635169</p></div> <div class="menber"><img src="image/20jinrongliang.jpg"><p>姓名：<a>梁晋荣(Jinrong Liang)</a></p><p>年级：2020级</p><p>籍贯：山西临汾</p><p>研究方向：船舶姿态分析与建模</p><p>QQ:573806914</p></div> 	<div class="menber"><img src="image/21meilinwang.jpg"><p>姓名：<a>王美琳(Meilin Wang)</a></p><p>年级：2021级</p><p>籍贯：湖南株洲</p><p>研究方向：交通流建模</p><p>QQ:2421641282</p></div><div class="menber"><img src="image/21weipingchen.jpg"><p>姓名：<a>陈伟平(Weiping Chen)</a></p><p>年级：2021级</p><p>籍贯：湖南郴州</p><p>研究方向：海事图像处理</p><p>QQ:1766923958</p></div><div class="menber"><img src="image/21chenxinwei.jpg"><p>姓名：<a>魏晨鑫(Chenxin Wei)</a></p><p>年级：2021级</p><p>籍贯：安徽合肥</p><p>研究方向：海事大数据分析</p><p>QQ:1946207988</p></div><div class="menber"><img src="image/21wangqiuying.jpg"><p>姓名：<a>王秋英(Qiuying Wang)</a></p><p>年级：2021级</p><p>籍贯：广西南宁</p><p>研究方向：基于AIS的交通模式挖掘</p><p>QQ:1138824790</p></div><div class="menber"><img src="image/21jianhuichen.jpg"><p>姓名：<a>陈建慧(Jianhui Chen)</a></p><p>年级：2021级</p><p>籍贯：安徽滁州</p><p>研究方向：基于图像分割的海天线检测</p><p>QQ:2315227310</p></div><div class="menber"><img src="image/21haowu.png"><p>姓名：<a>吴昊(Hao Wu)</a></p><p>年级：2021级</p><p>籍贯：江苏徐州</p><p>研究方向：基于倾斜框检测的船舶行为识别</p><p>QQ:867670814</p></div><div class="menber"><img src="image/21shuhaoliu.jpg"><p>姓名：<a>刘恕浩(Shuhao Liu)</a></p><p>年级：2021级</p><p>籍贯：重庆忠县</p><p>研究方向：自动化码头的调度优化</p><p>QQ:1964117170</p></div><div class="menber"><img src="image/21yuangao.jpg"><p>姓名：<a>高原(Yuan Gao)</a></p><p>年级：2021级</p><p>籍贯：吉林白山</p><p>研究方向：基于AIS的船舶行为识别与分析</p><p>QQ:2676138632</p></div><div class="menber"><img src="image/21zhenzhenzhou.jpg"><p>姓名：<a>周真真(Zhenzhen Zhou)</a></p><p>年级：2021级</p><p>籍贯：河南新乡</p><p>研究方向：基于机器视觉的交通流预测</p><p>QQ:1781814551</p></div></div>\n'</script>
-
-        -->
-    <!--成员-->
-
-	<script>
-		strVar += "<div style=\"width:110%;height:auto\"><h3>Group Photos and News<\/h3><\/div><div id=\"LAB\"><ul><li><img src=\"image/Lab_1.jpg\" class=\"OURLABIMG\"> 物科学子毕业留影（2021年6月）<\/li><li><img src=\"image/Lab_2.jpg\" class=\"OURLABIMG\"> 商船学子毕业留影（2021年6月）<\/li><li><img src=\"image/Lab_3.jpg\" class=\"OURLABIMG\"> 毕业留影（2022年6月）<\/li><li><img src=\"image/Lab_1.jpg\" class=\"OURLABIMG\"> 物科学子毕业留影（2021年6月）<\/li><\/ul><\/div><div id=\"STUDENTS\"><h3 style=\"margin-bottom:0;height:auto\">在读生<\/h3><hr><div style=\"width:110%;height:auto\"><div class=\"menber\"><img src=\"image/20zichuangwang.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/20ZiChuangWang.html\">王梓创 (Zichuang Wang)<\/a><\/p><p>年级：2020级<\/p><p>籍贯：广东揭阳<\/p><p>研究方向：基于视频的港口时空数据分析<\/p><p>QQ:1135508283<\/p><\/div><div class=\"menber\"><img src=\"image/20jinbiaozheng.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/20JinbiaoZheng.html\">郑金彪(Jinbiao Zheng)<\/a><\/p><p>年级：2020级<\/p><p>籍贯：安徽六安<\/p><p>研究方向：行为分析<\/p><p>QQ:1113258716<\/p><\/div><div class=\"menber\"><img src=\"image/20xingyuwu.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/20xingyuwu.html\">吴星宇 (Xingyu Wu)<\/a><\/p><p>年级：2020级<\/p><p>籍贯：河北邯郸<\/p><p>研究方向：海事图像语义分割<\/p><p>QQ:179951276<\/p><\/div><div class=\"menber\"><img src=\"image/20zhongweiyan.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/20zhongweiyan.html\">严忠伟(Zhongwei Yan)<\/a><\/p><p>年级：2020级<\/p><p>籍贯：山西吕梁<\/p><p>研究方向：AIS数据挖掘<\/p><p>QQ:1376062151<\/p><\/div><div class=\"menber\"><img src=\"image/21meilinwang.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21MeilinWang.html\">王美琳(Meilin Wang)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：湖南株洲<\/p><p>研究方向：交通流建模<\/p><p>QQ:2421641282<\/p><\/div><div class=\"menber\"><img src=\"image/21weipingchen.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21WeipingChen.html\">陈伟平(Weiping Chen)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：湖南郴州<\/p><p>研究方向：海事图像处理<\/p><p>QQ:1766923958<\/p><\/div><div class=\"menber\"><img src=\"image/21chenxinwei.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21ChenxinWei.html\">魏晨鑫(Chenxin Wei)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：安徽合肥<\/p><p>研究方向：海事大数据分析<\/p><p>QQ:1946207988<\/p><\/div><div class=\"menber\"><img src=\"image/21wangqiuying.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21wangqiuying.html\">王秋英(Qiuying Wang)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：广西南宁<\/p><p>研究方向：基于AIS的交通模式挖掘<\/p><p>QQ:1138824790<\/p><\/div><div class=\"menber\"><img src=\"image/21jianhuichen.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21jianhuichen.html\">陈建慧(Jianhui Chen)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：安徽滁州<\/p><p>研究方向：基于图像分割的海天线检测<\/p><p>QQ:2315227310<\/p><\/div><div class=\"menber\"><img src=\"image/21haowu.png\"><p>姓名：<a target=\"_blank\" href=\"students/21haowu.html\">吴昊(Hao Wu)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：江苏徐州<\/p><p>研究方向：基于倾斜框检测的船舶行为识别<\/p><p>QQ:867670814<\/p><\/div><div class=\"menber\"><img src=\"image/21shuhaoliu.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21shuhaoliu.html\">刘恕浩(Shuhao Liu)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：重庆忠县<\/p><p>研究方向：自动化码头的调度优化<\/p><p>QQ:1964117170<\/p><\/div><div class=\"menber\"><img src=\"image/21yuangao.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21yuangao.html\">高原(Yuan Gao)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：吉林白山<\/p><p>研究方向：基于AIS的船舶行为识别与分析<\/p><p>QQ:2676138632<\/p><\/div><div class=\"menber\"><img src=\"image/21zhenzhenzhou.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/21zhenzhenzhou.html\">周真真(Zhenzhen Zhou)<\/a><\/p><p>年级：2021级<\/p><p>籍贯：河南新乡<\/p><p>研究方向：基于机器视觉的交通流预测<\/p><p>QQ:1781814551<\/p><\/div><div class=\"menber\"><img src=\"image/22jiachangfan.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/22jiachangfan.html\">樊家畅(Jiachang Fan)<\/a><\/p><p>年级：2022级<\/p><p>籍贯：河南周口<\/p><p>研究方向：交通大数据挖掘<\/p><p>QQ:1277248051<\/p><\/div><div class=\"menber\"><img src=\"image/22ruiyanghu.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/22ruiyanghu.html\">胡瑞洋（Ruiyang Hu）<\/a><\/p><p>年级：2022级<\/p><p>籍贯：浙江定海<\/p><p>研究方向：智能港口、无人码头<\/p><p>QQ:547243299<\/p><\/div><div class=\"menber\"><img src=\"image/22qianlima.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/22qianlima.html\">马千里 (Qianli Ma)<\/a><\/p><p>年级：2022级<\/p><p>籍贯：安徽宿州<\/p><p>研究方向：态势感知智能避碰<\/p><p>QQ:695470536<\/p><\/div><div class=\"menber\"><img src=\"image/22shutingdou.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/22shutingdou.html\">窦淑婷 (Shuting Dou)<\/a><\/p><p>年级：2022级<\/p><p>籍贯：江苏徐州<\/p><p>研究方向：交通数据处理<\/p><p>QQ:2287182982<\/p><\/div><\/div><\/div><div style=\"width:100%;float:right\"><h3 style=\"margin-bottom:0\">毕业生<\/h3><hr><\/div><div style=\"width:100%;float:right\"><div style=\"width:110%\"><div class=\"menber\"><img src=\"image/19junling.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/19LingJun.html\">凌 峻(Jun Ling)<\/a><\/p><p>年级：2019级<\/p><p>籍贯：安徽芜湖<\/p><p>去向：中国银行安徽分行<\/p><p>QQ:1007811080<\/p><\/div><div class=\"menber\"><img src=\"image/20jinrongliang.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/20jinrongliang.html\">梁晋荣(Jinrong Liang)<\/a><\/p><p>年级：2020级<\/p><p>籍贯：山西临汾<\/p><p>QQ:573806914<\/p><\/div><div class=\"menber\"><img src=\"image/19shubowu.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/19shubowu.html\">吴淑博(Shubo Wu)<\/a><\/p><p>年级：2019级<\/p><p>籍贯：海南海口<\/p><p>去向：同济大学攻读博士<\/p><p>QQ:1220430336<\/p><\/div><div class=\"menber\"><img src=\"image/20xianglongxu.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/20xianglongxu.html\">徐祥龙 (Xianglong Xu)<\/a><\/p><p>年级：2020级<\/p><p>籍贯：山东临沂<\/p><p>去向：上研智联智能出行科技（上海）有限公司<\/p><p>QQ:1396669626<\/p><\/div><div class=\"menber\"><img src=\"image/20feixiangshi.jpg\"><p>姓名：<a target=\"_blank\" href=\"students/20feixiangshi.html\">史飞翔(Feixiang Shi)<\/a><\/p><p>年级：2020级<\/p><p>籍贯：山东济宁<\/p><p>去向：江南造船集团有限公司<\/p><p>QQ:1606635169<\/p><\/div><div class=\"menber\"><img src=\"image/18huixingchen.jpg\"><p>姓名：<a>陈辉兴(Huixing Chen)<\/a>（市优）<\/p><p>年级：2018级<\/p><p>籍贯：海南万宁<\/p><p>去向：工商银行(上海)<\/p><p>QQ:2281038739<\/p><\/div><div class=\"menber\"><img src=\"image/18xueqianxu.jpg\"><p>姓名：<a>许学谦(Xueqian Xu)<\/a>（市优）<\/p><p>年级：2018级<\/p><p>籍贯：甘肃天水<\/p><p>去向：武汉理工大学攻读博士<\/p><p>QQ:347117412<\/p><\/div><div class=\"menber\"><img src=\"image/18leiqi.jpg\"><p>姓名：<a>齐 雷(Lei Qi)<\/a><\/p><p>年级：2018级<\/p><p>籍贯：安徽安庆<\/p><p>去向：上海小米金融服务信息有限公司<\/p><p>QQ:765893830<\/p><\/div><div class=\"menber\"><img src=\"image/19jinquanlu.jpg\"><p>姓名：<a>陆锦泉(Jinquan Lu)<\/a>（市优）<\/p><p>年级：2019级<\/p><p>籍贯：广东佛山<\/p><p>去向：广东省城乡规划设计院<\/p><p>QQ:978684960<\/p><\/div><\/div><\/div>\n";
-	</script>
-
-    <script type="text/javascript">var ST = strVar; strVar = "";</script>
-    <script type="text/javascript">strVar += '<div><div class="join"><div style=""><div style="background-image:url(image/phone.png);width:21px;height:21px;background-position:-187px -105px;margin-right:5px;float:left"></div><span>(+86)02138284633</span></div><div style="margin-top:25px"><div style="background-image:url(image/phone.png);width:21px;height:21px;background-position:-161px -105px;margin-right:5px;float:left"></div><span><a href="mailto:chenxinqiang@stu.shmtu.edu.cn"><b>chenxinqiang@stu.shmtu.edu.cn</b></a></span></div></div></div><div id=\"Lastupdata\"><ul><li><b>Last Updated:<script type=\"text/javascript\">document.write(LAST_DATA)<\/script><\/b><\/li><\/ul><\/div>'</script>
-    <script type="text/javascript">var JU = strVar; strVar = "";</script>
-    <script type="text/javascript">strVar += "<div><h3>Research Interests</h3><ul><li> Intelligent traffic environment percption via video data</li><li>Smart shipping </li><li>Large-scale transportation data mining</li><li>video data aided autonomous vehicle navigation</li><li>unmanned port </li> <li> Traffic safety </li> <li>the above list may vary along with research interest change</li></ul></div><div id=\"Lastupdata\"><ul><li><b>Last Updated:<script type=\"text/javascript\">document.write(LAST_DATA)<\/script><\/b><\/li><\/ul><\/div>"</script>
-    <script type="text/javascript">var RI = strVar; strVar = "";</script>
-
-
-    <!--基金项目-->
-    <script>
-        var PJ = "";
-        strVar += "<div><h3>Participated Projects<\/h3><ul><li>Highway Grade Characterization and Operating Efficiency Methods, Tools and Data Development (Sponsored by Federal Highway Administration).<\/li><li>Drive net phase II: Online moving Washington platform for network-wide system operations, monitoring and analysis (Sponsored by Washington State Department of Transportation).<\/li><li>Regional Map Based Analytical Platform for State-Wide Highway Safety Performance Assessment (Sponsored by Regional Transportation Center for Federal Region 10).<\/li><li>The three-dimensional dynamic cooperative localization mechanism of ocean sensor network based on the ocean wave shielding effect model (Sponsored by National Natural Science Foundation of China)<\/li><li>Dynamic topology and spatial-temporal stochastic coverage mechanism of maritime search and rescue wireless sensor networks (Sponsored by National Natural Science Foundation of China).<\/li><li>Maritime target detection via GNSS-R and heterogeneous sensor information fusion method for maritime surveillance (Sponsored by National Natural Science Foundation of China).<\/li><li>Energy-friendly route design based on big data and machine learning (Sponsored by Shanghai Municipal Education Commission)<\/li><li>Study on the mechanism of dynamic topology and temporal and spatial random coverage of wireless sensor network in maritime search and rescue (Sponsored by Shanghai Municipal Education Commission).<\/li><\/ul><\/div><div id=\"Lastupdata\"><ul><li><b>Last Updated:<script type=\"text/javascript\">document.write(LAST_DATA)<\/script><\/b><\/li><\/ul><\/div>";
-        var PJ = strVar; strVar = "";
-    </script>
-    <!--主页面内容-->
-
-
-    
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-        
-
-
-
-
-        <!-- <style>
-            .nav {
-                position: fixed;
-                top: 100px;
-                left: 80px;
-                display: flex;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            li{
-                width: 100px;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-                margin: 0 10px;
-                background: #fff;   /* 按钮的颜色 */
-                font-size: 18px;
-                color:#000
-            }
-
-            iframe {
-              width: 100vh;
-              height: 100vh; /* 将 iframe 元素的高度设置为视口的高度 */
-              border: none;
-            }
-        </style> -->
-
-
-
-
-
-
-
-</head>
-<body>
-  <div id="top">
-    <div class="navigation00" style="padding-left: 10px">
-      <div style="display: inline-block;text-align:left;">
-        <h3 style="margin-top: 10px; color:white">MATLAB</h3>
-        <h3 style="font-size: 14px; color:white">Multimodal Autonomous Smart Transportation Lab</h3>
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1180">
+    <title>科学研究 | 陈信强课题组</title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body class="subpage-layout">
+    <header class="site-header">
+      <div class="home-banner subpage-banner">
+        <div class="container home-banner-inner">
+          <a class="home-logo" href="home.html" aria-label="陈信强课题组首页">
+            <span class="home-logo-ring"><span>M</span></span>
+          </a>
+          <div>
+            <p class="home-banner-kicker">Multimodal Autonomous Smart Transportation Lab</p>
+            <h2>科学研究</h2>
+            <p>项目 · 专利软著 · 代表性论文</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="navigation0"><a class = 'top_a' href="home.html"><h3>Home</h3></a></div>
-    <div class="navigation2"><a class = 'top_a' href="Members.html"><h3>Members</h3></a></div>
-    <div class="navigation1"><a class = 'top_a' href="Publications.html" style="text-decoration: underline"><h3>Publications&Projects</h3></a></div>
-    <div class="navigation3"><a class = 'top_a' href="Reaserch Interest.html"><h3>Reaserch Interest</h3></a></div>
-
-  </div>
-
-
-    <div id="main">
-        <!-- <script type="text/javascript">
-            switch (mapTo) {
-                case '0':
-                    loadStyleStrin(" #top .navigation0{background-color: white;color: #2d78ad;}");
-                    document.write(home); break;
-                case '1':
-                    loadStyleStrin("#top .navigation1{background-color: white;color: #2d78ad;}");
-                    document.write(Biography); break;
-                case '2': loadStyleStrin("#top .navigation2{background-color: white;color: #2d78ad;}"); document.write(EE); break;
-                case '3': loadStyleStrin("#top .navigation3{background-color: white;color: #2d78ad;}"); document.write(SP); break;
-                case '4': loadStyleStrin("#top .navigation4 {background-color: white;color: #2d78ad;}"); document.write(ST); break;
-                case '6': loadStyleStrin("#top .navigation6{background-color: white;color: #2d78ad;}"); document.write(JU); break;
-                case '5': loadStyleStrin("#top .navigation5 {background-color: white;color: #2d78ad;}"); document.write(RI); break;
-                case '7': loadStyleStrin("#top .navigation7 {background-color: white;color: #2d78ad;}"); document.write(PJ); break;
-            }
-        </script> -->
-        
-          <!-- <ul class="nav">
-            <li data-src="./html/page01.html">全部论文</li>
-            <li data-src="./html/page02.html">高被引论文</li>
-        </ul>
-        
-        <iframe src="" frameborder="0" id="iframe"></iframe>
-        <script>
-     
-            //有两种方法，推荐第二种
-            //方法一
-            //将地址放在数组中
-            let arr = ['./html/page01.html','./html/page02.html']
-            //获取iframe标签
-            let iframe = document.querySelector('#iframe')
-            //获取导航栏按钮
-            let lis = document.querySelectorAll('li')
-            //点击导航栏，改变Iframe的src属性，实现页面切换
-            for (let i = 0; i < lis.length; i++) {
-                //绑定点击事件
-                lis[i].onclick = function(event){
-                    //方法一
-                    // iframe.src = arr[i]
-                    //方法二 自定义属性
-                    iframe.src = event.target.dataset.src
-                }
-                
-            }
-        </script> -->
-
-
-
-
-
-          <h1>
-            Selected publications(部分发表的论文)
-          </h1>
-          <p>
-            <i
-              >(Video maybe adjusted into different length for different reseach
-              purposes. Please cite our publications if you find the paper or data may
-              benefit your research)</i
-            >
-          </p>
-          <ul id="public" style="list-style-type: none">
-            <!-- <li>
-              <video width="240" height="160" autoplay="" loop="" muted="">
-                <source src="./image/1-1.mp4" />
-              </video>
-              <div style="height: 160px">
-                <p>
-                  <a
-                    href="file/High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos.pdf"
-                    target="_blank"
-                    >High-Resolution Vehicle Trajectory Extraction and Denoising From
-                    Aerial Videos</a
-                  ><br /><b>Xinqiang Chen</b>, Zhibin Li, Yongsheng Yang, et al<br />IEEE
-                  Transactions on Intelligent Transportation Systems, 22(5): 3190-3202. (Hot paper)
-                  <br />
-                </p>
-                <div class="abstract">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      In recent years, unmanned aerial vehicle (UAV) has become an
-                      increasingly popular tool for traffic monitoring and data
-                      collection on highways due to its advantage of low cost, high
-                      resolution, good flexibility, and wide spatial coverage.
-                      Extracting high-resolution vehicle trajectory data from aerial
-                      videos taken by a UAV flying over target highway segment becomes a
-                      critical research task for traffic flow modeling and analysis.
-                      This study aims at proposing a novel methodological framework for
-                      automatic and accurate vehicle trajectory extraction from aerial
-                      videos. The method starts by developing an ensemble detector to
-                      detect vehicles in the target region. Then, the kernelized
-                      correlation filter is applied to track vehicles fast and
-                      accurately. After that, a mapping algorithm is proposed to
-                      transform vehicle positions from the Cartesian coordinates in
-                      image to the Frenet coordinates to extract raw vehicle
-                      trajectories along the roadway curves. The data denoising is then
-                      performed using a wavelet transform to eliminate the biased
-                      vehicle trajectory positions. Our method is tested on two aerial
-                      videos taken on different urban expressway segments in both peak
-                      and non-peak hours on weekdays. The extracted vehicle trajectories
-                      are compared with manual calibrated data to testify the framework
-                      performance. The experimental results show that the proposed
-                      method successfully extracts vehicle trajectories with a high
-                      accuracy: the measurement error of Mean Squared Deviation is 2.301
-                      m, the Root-mean-square deviation is 0.175 m, and the Pearson
-                      correlation coefficient is 0.999. The video and trajectory data in
-                      this study are publicly accessible for serving as benchmark at
-                      https://seutraffic.com.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-            <li>
-              <video width="240" height="160" autoplay="" loop="" muted="">
-                <source src="./image/2-1.png" />
-              </video>
-              <div style="height: 160px">
-                <p>
-                  <a
-                    href="file/Personnel_Trajectory_Extraction_From_Port-Like_Videos_Under_Varied_Rainy_Interferences.pdf"
-                    target="_blank"
-                    >Personnel Trajectory Extraction From Port-Like Videos Under Varied Rainy Interferences</a
-                  ><br /><b>Xinqiang Chen</b>, Chenxin Wei, Yang Yang, et al<br />IEEE Transactions on Intelligent Transportation Systems, 25(7): 6567-6579 (1区top SCI，ESI高被引)
-                  <br />
-                </p>
-                <div class="abstract">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Large-scale deployed cameras in the automated container terminal (ACT) area helps on-site staff better identify unexpected yet 
-                      emergency events by monitoring port personnel trajectories. Rainy weather is a common yet typical problem which may significantly
-                       deteriorate trajectory extraction performance. To tackle the problem, the study proposes an ensemble framework to extract personnel 
-                       trajectory from port-like surveillance videos under varied rainy weather scenarios. Firstly, the proposed framework learns fine-grained 
-                       personnel features with the help of the object query and transformer encoder-decoder module from the input port-like image sequences, 
-                       and thus obtains port personnel locations from the input low-visibility images. Secondly, the personnel positions are further 
-                       associated in a frame-by-frame manner with the help of neighboring kinematic movement information and feature information. 
-                       Finally, a memory mechanism is introduced in the proposed framework to suppress personnel trajectory discontinuity outlier. 
-                       In that manner, we can obtain accurate yet consistent personnel trajectories, and each person is assigned with a unique ID. 
-                       We verified the proposed model performance on three port-like rainy videos involving with interferences of rain, rain streak and fog. 
-                       Experimental results show that the proposed port personnel trajectory extraction framework can obtain satisfied performance considering 
-                       that the average multi-target accuracy (MOTA), the average value of judging the same target (IDF1), average recall rate (IDR) 
-                       and average precision (IDP) were larger than 92%.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            
-            <!-- <li>
-              <div style="float: left;">
-              <img alt="" src="image/1-2.png" width="240" height="160" />
-              </div>              
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network.pdf"
-                    target="_blank"
-                    >Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution
-                    Neural Network</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>,Yongsheng Yang, Shengzheng Wang, et al<br /><a style="margin-left: 20px;">Journal
-                  of Navigation, 73(4),813-832.(ESI)</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Most previous research has handled the task of ship type
-                      recognition by exploring hand-craft ship features, which may fail
-                      to distinguish ships with similar visual appearances. This
-                      situation motivates us to propose a novel deep learning based ship
-                      type recognition framework which we have named coarse-to-fine
-                      cascaded convolution neural network (CFCCNN). First, the proposed
-                      CFCCNN framework formats the input training ship images and data,
-                      and provides trainable input data for the hidden layers of the
-                      CFCCNN. Second, the coarse and fine steps are run in a nesting
-                      manner to explore discriminative features for different ship
-                      types. More specifically, the coarse step is trained in a similar
-                      manner to the traditional convolution neural network, while the
-                      fine step introduces regularisation mechanisms to extract more
-                      intrinsic ship features, and fine tunes parameter settings to
-                      obtain better recognition performance. Finally, we evaluate the
-                      performance of the CFCCNN model for recognising the most common
-                      types of merchant ship (oil tanker, container, LNG tanker,
-                      chemical carrier, general cargo, bulk carrier, etc.). The
-                      experimental results show that the proposed framework obtains
-                      better recognition performance than the conventional methods of
-                      ship type recognition.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-
-            <li>
-              <div style="float: left;">
-              <img alt="" src="image/1-8.gif" width="240" height="160" />
-              </div>              
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/AI-Empowered_Speed_Extraction_via_Port-Like_Videos_for_Vehicular_Trajectory_Analysis.pdf"
-                    target="_blank"
-                    >AI-Empowered Speed Extraction via Port-like Videos for 
-                    Vehicular Trajectory Analysis</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>, Zichuang Wang, Qiaozhi Hua, Wen-long Shang, Qiang Luo, 
-                  Keping Yu, et al<br /><a style="margin-left: 20px;">IEEE Transactions on Intelligent Transportation 
-                    Systems,  24(4): 4541-4552. (1区top SCI, ESI高被引)</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Automated container terminal (ACT) is considered as port industry 
-                      development direction, and accurate kinematic data (speed, volume, etc.) is 
-                      essential for enhancing ACT operation efficiency and safety. Port surveillance 
-                      videos provide much useful spatial-temporal information with advantages of easy 
-                      obtainable, large spatial coverage, etc. In that way, it is of great importance 
-                      to analyze automated guided vehicle (AGV) trajectory movement from port surveillance 
-                      videos. Motivated by the newly emerging computer vision and artificial intelligence 
-                      (AI) techniques, we propose an ensemble framework for extracting vehicle speeds from 
-                      port-like surveillance videos for the purpose of analyzing AGV moving trajectory. 
-                      Firstly, the framework exploits vehicle position in each image via a feature-enhanced 
-                      scale-aware descriptor. Secondly, we match vehicle position and trajectory data from 
-                      the previous step output via Kalman filter and Hungarian algorithm, and thus we obtain 
-                      the vehicular imaging trajectory in a frame-by-frame manner. Thirdly, we estimate the 
-                      vehicular moving speed in real-world via the help of perspective projection theory. 
-                      The experimental results suggest that our proposed framework can obtain accurate 
-                      vehicle kinematic data under typical port traffic scenarios considering that the 
-                      average measurement error of root mean square deviation is 0.675 km/h, the mean 
-                      absolute deviation is 0.542 km/h, and the Pearson correlation coefficient is 
-                      0.9349. The research findings suggest that cutting-edge AI and computer vision 
-                      techniques can accurately extract on-site vehicular trajectory related data 
-                      from port videos, 
-                      and thus help port traffic participants make more reasonable management decisions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div style="float: left;">
-              <img alt="" src="image/2-2.png" width="240" height="160" />
-              </div>              
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/Autonomous port management based AGV path planning and optimization via an ensemble reinforcement learning framework.pdf"
-                    target="_blank"
-                    >Autonomous port management based AGV path planning and optimization
-                    via an ensemble reinforcement learning framework</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>, Shuhao Liu, Jiansen Zhao, Huafeng Wu, Jiangfeng Xian, 
-                  et al<br /><a style="margin-left: 20px;">Ocean & Coastal Management, 251(2024):107087(1区SCI, ESI高被引、热点论文).</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      The rapid development of shipping trade pushes automated container terminals toward the direction of intelligence,
-                      safety and efficiency. In particular, the formulation of AGV scheduling tasks and the safety and stability
-                      of transportation path is an important part of port operation and management, and it is one of the basic tasks to
-                      build an intelligent port. Existing research mainly focuses on collaborative operation between port equipment
-                      and path optimization under environmental perception, while there is relatively little research on optimization of
-                      path smoothness and safety. Therefore, we propose a path optimization model based on the artificial potential
-                      field and twin delayed deep deterministic policy gradient (APF-TD3) framework for the port environment.
-                      Firstly, we obtain the scheduling task plan of a single AGV by enumeration. Secondly, according to the artificial
-                      potential field (APF) algorithm to generate repulsion for obstacles in the harbor and attraction for container
-                      storage at the target point with the position information of the AGV as the input data of the reinforcement
-                      learning algorithm is inputted into the twin delayed deep deterministic policy gradient algorithm (TD3). Then
-                      TD3 selects the optimal action strategy for the AGV according to the input AGV state information and the
-                      designed reward mechanism as well as executes the action. Through repeated execution, the optimal action for
-                      the next step is selected at each point to generate a path with start and end points. We validate the model by
-                      simulating the scale of containerized cargo in the port i.e. small scale, medium scale and large scale scenes. The
-                      experimental results show that the method has the shortest path length of 27.519 m, 270.847 m, and 496.389 m
-                      compared to artificial potential field and deep deterministic policy gradient (APF-DDPG), APF, and rapidlyexploring
-                      random tree (RRT) algorithms, which also have significant advantages in terms of path security and
-                      path smoothness. This framework could respond to the scheduling and transportation tasks of single AGV in
-                      different environmental layouts and guarantee the smoothness and safety of the path based on the optimization
-                      of the path, which promotes the efficient operation and management of ports.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-            <li>
-              <div style="float: left;">
-              <img alt="" src="image/2-3.png" width="240" height="160" />
-              </div>              
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/Ship energy consumption analysis and carbon emission exploitation via spatial-temporal maritime data.pdf"
-                    target="_blank"
-                    >Ship energy consumption analysis and carbon emission exploitation via spatial-temporal maritime data</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>, Siying Lv, Wen-long Shang, Huafeng Wu, 
-                  Jiangfeng Xian,  Chengcheng Song, et al<br /><a style="margin-left: 20px;">Applied Energy, 2024, 360: 122886 (1区SCI, ESI高被引、热点论文)</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Global greenhouse gas emission attracts significant attentions across varied communities, 
-                      and carbon emission (CE) reduction has become hot topic in the maritime field considering that appropriately 3% CE come from the field.
-                      The prerequisite for fulfilling the task is to accurately quantify the ship CE. To achieve the aim, the study utilizes indicators, 
-                      such as carbon dioxide (CO2) emission, CO2 index, fuel consumption, energy efficiency operational indicator (EEOI), 
-                      fleet energy efficiency management index (FEEMI), to analyze ship energy con­ sumption. We employ ship voyage data from container, oil tanker, 
-                      bulk carrier and liquefied natural gas (LNG) carrier to evaluate ship energy consumption. 
-                      We have testified EEOI variation tendency under different ship cargo loading volume states (i.e., full/partial load) and speed deceleration scenario.
-                       Moreover, the FEEMI in­ dicator is used to determine energy efficiency for different ship fleets (container ship fleet, oil tanker fleet,
-                       bulk carrier fleet, LNG fleet). Experimental results suggest that EEOI is proportional to ship energy consumption when the sailing distance and cargo volume are constant. 
-                       The ship EEOI indicator calculated in full-loaded status is obviously smaller than the counterpart under partial-load status. 
-                       The fleet energy consumption efficiency shows a slight increase (at least 1%) due to release of ship energy efficiency management plan. 
-                       The research findings can help maritime policy-makers provide more reasonable regulations for the purpose of ship energy con­ sumption enhancement.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-
-            <li>
-              <video width="240" height="160" autoplay="" loop="" muted="">
-                <source src="./image/1-1.mp4" />
-              </video>
-              <div style="height: 160px">
-                <p>
-                  <a
-                    href="file/High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos.pdf"
-                    target="_blank"
-                    >High-Resolution Vehicle Trajectory Extraction and Denoising From
-                    Aerial Videos</a
-                  ><br /><b>Xinqiang Chen</b>, Zhibin Li, Yongsheng Yang, et al<br />IEEE
-                  Transactions on Intelligent Transportation Systems, 22(5): 3190-3202. (1区top，ESI高被引，热点论文，入选2022年交通运输重大科技成果库)
-                  <br />
-                </p>
-                <div class="abstract">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      In recent years, unmanned aerial vehicle (UAV) has become an
-                      increasingly popular tool for traffic monitoring and data
-                      collection on highways due to its advantage of low cost, high
-                      resolution, good flexibility, and wide spatial coverage.
-                      Extracting high-resolution vehicle trajectory data from aerial
-                      videos taken by a UAV flying over target highway segment becomes a
-                      critical research task for traffic flow modeling and analysis.
-                      This study aims at proposing a novel methodological framework for
-                      automatic and accurate vehicle trajectory extraction from aerial
-                      videos. The method starts by developing an ensemble detector to
-                      detect vehicles in the target region. Then, the kernelized
-                      correlation filter is applied to track vehicles fast and
-                      accurately. After that, a mapping algorithm is proposed to
-                      transform vehicle positions from the Cartesian coordinates in
-                      image to the Frenet coordinates to extract raw vehicle
-                      trajectories along the roadway curves. The data denoising is then
-                      performed using a wavelet transform to eliminate the biased
-                      vehicle trajectory positions. Our method is tested on two aerial
-                      videos taken on different urban expressway segments in both peak
-                      and non-peak hours on weekdays. The extracted vehicle trajectories
-                      are compared with manual calibrated data to testify the framework
-                      performance. The experimental results show that the proposed
-                      method successfully extracts vehicle trajectories with a high
-                      accuracy: the measurement error of Mean Squared Deviation is 2.301
-                      m, the Root-mean-square deviation is 0.175 m, and the Pearson
-                      correlation coefficient is 0.999. The video and trajectory data in
-                      this study are publicly accessible for serving as benchmark at
-                      https://seutraffic.com.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-          
-
-
-            <!-- <li>
-              <video width="240" height="160" autoplay="" loop="" muted="">
-                <source src="./image/1-3.mp4" />
-              </video>
-              <div style="height: 160px">
-                <p>
-                  <a
-                    href="file/Robust ship tracking via multi-view learning and sparse representation.pdf"
-                    target="_blank"
-                    >Robust ship tracking via multi-view learning and sparse
-                    representation</a
-                  ><br /><b>Xinqiang Chen</b>, Shengzheng Wang, Chaojian Shi, et al<br />Journal
-                  of Navigation, 72(1): 176-192. (ESI)
-                  <a
-                    href="https://www.researchgate.net/publication/327632766_Robust_Ship_Tracking_via_Multi-view_Learning_and_Sparse_Representation"
-                    ></a
-                  ><br />
-                </p>
-                <div class="abstract">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Conventional visual ship tracking methods employ single and
-                      shallow features for the ship tracking task, which may fail when a
-                      ship presents a different appearance and shape in maritime
-                      surveillance videos. To overcome this difficulty, we propose to
-                      employ a multi-view learning algorithm to extract a highly coupled
-                      and robust ship descriptor from multiple distinct ship feature
-                      sets. First, we explore multiple distinct ship feature sets
-                      consisting of a Laplacian-ofGaussian (LoG) descriptor, a Local
-                      Binary Patterns (LBP) descriptor, a Gabor filter, a Histogram of
-                      Oriented Gradients (HOG) descriptor and a Canny descriptor, which
-                      present geometry structure, texture and contour information, and
-                      more. Then, we propose a framework for integrating a multi-view
-                      learning algorithm and a sparse representation method to track
-                      ships efficiently and effectively. Finally, our framework is
-                      evaluated in four typical maritime surveillance scenarios. The
-                      experimental results show that the proposed framework outperforms
-                      the conventional and typical ship tracking methods.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-
-
-            
-            <!-- <li>
-              <div style="float: left;">
-              <img alt="" src="image/1-6.png" width="240" height="160" />
-              </div>              
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/Video-based detection infrastructure enhancement for automated ship recognition and behavior analysis.pdf"
-                    target="_blank"
-                    >Video-based detection infrastructure enhancement for automated ship recognition and behavior analysis</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>, Lei Qi, Yongsheng Yang, Qiang Luo, Octavian Postolache, 
-                  Jinjun Tang, Huafeng Wu, et al<br /><a style="margin-left: 20px;">Journal 
-                    of Advanced Transportation, 2020, 1-12. (SCI, ESI 高被引)</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Video-based detection infrastructure is crucial for promoting connected
-                       and autonomous shipping (CAS) development, which 
-                      provides critical on-site trac data for maritime participants. Ship behavior 
-                      analysis, one of the fundamental tasks for fullling 
-                      smart video-based detection infrastructure, has become an active topic in the CAS community. 
-                      Previous studies focused on ship 
-                      behavior analysis by exploring spatial-temporal information from automatic identication 
-                      system (AIS) data, and less attention was 
-                      paid to maritime surveillance videos. To bridge the gap, we proposed an ensemble you only look once (YOLO) framework for ship 
-                      behavior analysis. First, we employed the convolutional neural network in the YOLO model to extract multi-scaled ship features 
-                      from the input ship images. Second, the proposed framework generated many bounding boxes (i.e., potential ship positions) based 
-                      on the object condence level. ird, we suppressed the background bounding box interferences, and determined ship detection 
-                      results with intersection over union (IOU) criterion, and thus obtained ship positions in each ship image. Fourth, we analyzed 
-                      spatial-temporal ship behavior in consecutive maritime images based on kinematic ship information. e experimental results 
-                      have shown that ships are accurately detected (i.e., both of the average recall and precision rate were higher than 90%) and the 
-                      historical ship behaviors are successfully recognized. e proposed framework can be adaptively deployed in the connected and 
-                      autonomous vehicle detection system in the automated terminal for the purpose of exploring the coupled interactions between 
-                      trac ow variation and heterogeneous detection infrastructures, and thus enhance terminal trac network capacity and safety.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-
-
-
-            <!-- <li>
-              <div style="float: left;">
-              <img alt="" src="image/1-7.gif" width="240" height="160" />
-              </div>              
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/Augmented_Ship_Tracking_Under_Occlusion_Conditions_From_Maritime_Surveillance_Videos.pdf"
-                    target="_blank"
-                    >Augmented Ship Tracking Under Occlusion Conditions From Maritime Surveillance Videos</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>, Xueqian Xu, Yongsheng Yang, Huafeng Wu, Jinjun Tang, 
-                  Jiansen Zhao, et al<br /><a style="margin-left: 20px;"> IEEE ACCESS, 8(1), 42884-42897. (SCI, 
-                    ESI 高被引)</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Ship tracking provides crucial on-site microscopic kinematic traffic 
-                      information which benefits maritime traffic flow analysis, ship safety 
-                      enhancement, traffic control, etc., and thus has attracted considerable 
-                      research attentions in the maritime surveillance community. Conventional 
-                      ship tracking methods yield satisfied results 
-                      by exploring distinct visual ship features 
-                      in maritime images, which may fail when the target ship is partially or fully 
-                      sheltered by obstacles (e.g., ships, waves, etc.) in maritime videos. 
-                      To overcome the difficulty, we propose an augmented ship tracking framework 
-                      via the kernelized correlation filter (KCF) and curve fitting algorithm. First, the 
-                      KCF model is introduced to track ships in the consecutive maritime 
-                      images and obtain raw ship trajectory dataset. Second, the data anomaly detection 
-                      and rectification procedure are implemented to rectify the contaminated ship 
-                      positions. For the purpose of performance evaluation, we implement the proposed 
-                      framework and another three popular ship tracking models on the four typical ship 
-                      occlusion videos. The experimental results show that our proposed framework successfully 
-                      tracks ships in maritime video clips with high accuracy (i.e., the average root mean 
-                      square error (RMSE), root mean square percentage error (RMSPE), mean absolute 
-                      deviation (MAD) and mean absolute percentage error (MAPE) are less than 10), 
-                      which significantly outperforms the other popular ship trackers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-             -->
-            
-            <!-- <li>
-              <div style="float: left;">
-              <img alt="" src="image/1-4.png" width="240" height="160" />
-              </div>
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/Visual Ship Tracking via a Hybrid Kernelized Correlation Filter and Anomaly Cleansing Framework.pdf"
-                    target="_blank"
-                    >删除了Visual Ship Tracking via a Hybrid Kernelized Correlation Filter and
-                    Anomaly Cleansing Framework</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>,Xueqian Xu, Yongsheng Yang, et al.<br /><a style="margin-left: 20px;">Applied
-                  Ocean Research, 106(2021): 1-10.</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main">
-                    <p>
-                      Ship tracking from maritime visual sensing data (namely maritime
-                      surveillance videos) provides various kinematic maritime traffic
-                      information, which significantly benefits remote maritime traffic
-                      controlling and management, off-site law enforcement, etc. But, it
-                      is difficult to extract distinct ship visual features when the
-                      target ship is sheltered by the neighboring ship in the maritime
-                      images (or the images are shot in low visibility condition). To
-                      address the difficulty, we proposed a hybrid ship tracking
-                      framework via the help of kernelized correlation filter (KCF) and
-                      anomaly cleaning models (including curve fitting method and Kalman
-                      filter). First, we employed the KCF model to obtain raw ship
-                      trajectories in consecutive maritime images. Second, our ship
-                      tracker is accurately initialized (to be specific, ground truth
-                      ship position in the first frame is employed to initialize the
-                      ship tracker). Third, the Kalman filter is introduced to suppress
-                      the trivial ship position oscillations in the raw ship
-                      trajectories. We verified the proposed framework performance on
-                      the four typical maritime scenarios. The experimental results
-                      indicate that the proposed ship tracker showed more accurate ship
-                      tracking results compared to other four popular ship trackers in
-                      terms of average root mean square error (RMSE), mean absolute
-                      deviation (MAD) and mean square error (MSE). The research findings
-                      can help maritime traffic participants obtain visual on-spot
-                      maritime kinematic information, and thus further enhance maritime
-                      traffic safety.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-
-
-            <!-- <li>
-              <div style="float: left;">
-              <img alt="" src="image/1-5.png" width="240" height="160" />
-              </div>
-              <div style="height: 160px">
-                <p>
-                  <a style="margin-left: 20px;"
-                    href="file/Sensing Data Supported Traffic Flow Prediction via Denoising Schemes and ANN.pdf"
-                    target="_blank"
-                    >删除了Sensing Data Supported Traffic Flow Prediction via Denoising
-                    Schemes and ANN: A Comparison</a
-                  ><br /><b style="margin-left: 20px;">Xinqiang Chen</b>,Shubo Wu, Chaojian Shi, et al.<br /><a style="margin-left: 20px;">IEEE
-                  Sensors Journal, 20(23): 14317-14328.</a><br />
-                </p>
-                <div class="abstract" style="margin-left: 20px;">
-                  ABSTRACT/
-                  <div class="abstract_main" style="margin-left: 20px;">
-                    <p>
-                      Short-term traffic flow prediction plays a key role of Intelligent
-                      Transportation System (ITS), which supports traffic planning,
-                      traffic management and control, roadway safety evaluation, energy
-                      consumption estimation, etc. The widely deployed traffic sensors
-                      provide us numerous and continuous traffic flow data, which may
-                      contain outlier samples due to expected sensor failures. The
-                      primary objective of the study was to evaluate the use of various
-                      smoothing models for cleaning anomaly in traffic flow data, which
-                      were further processed to predict short term traffic flow
-                      evolution with artificial neural network. The wavelet filter,
-                      moving average model, and Butterworth filter were carefully tested
-                      to smooth the collected loop detector data. Then, the artificial
-                      neural network was introduced to predict traffic flow at different
-                      time spans, which were quantitatively analyzed with commonly-used
-                      evaluation metrics. The findings of the study provide us efficient
-                      and accurate denoising approaches for short term traffic flow
-                      prediction.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
-
-          </ul>
-
-
-          <hr class="divider-publication">
-          
-
-  	<div id="Recent_papers"  style="margin-right: 10%">
-      
-
-        <h1>
-          Selected Projects(部分主持/参与科研项目)
-                </h1>
-          <ul>
-            <li>国家自然科学基金（面上项目），2025/01-2028/12，主持.</li>
-            <li>国家自然科学基金（青年项目），2022/01-2024/12，主持.</li>
-            <li>中国博士后基金，2022-2023，主持，结题.</li>
-            <li>水路交通控制全国重点实验室开放课题，2025/01-2025/12，主持.</li>
-            <li>绿色物流智能技术重庆市重点实验开放基金（重点项目），2024/11-2025/10，主持.</li>
-            <li>智能机器人江西省重点实验室开放课题（一般项目），2025/1-2026/12，主持.</li>
-            <li>交通运输部东海航海保障中心，2024/6-2024/12, 主持，结题</li>
-            <li>上海船舶运输科学研究所有限公司，2022/1-2023/12, 主持，结题.</li>
-            <li>交通运输部东海航海保障中心，2023/8-2023/12, 主持, 结题</li>
-            <li>国家水运安全工程技术研究中心开放基金，2022，主持，结题.</li>
-            <li>江苏省交通运输与安全保障重点建设实验室开放基金，2022/01-2023/12，主持，结题.</li>
-            <li>内河航运技术湖北省重点实验室开放基金，2022/01-2023/12，主持，结题.</li>
-            <li>上海海事大学，控制科学与工程研究生重点课程任务，2020-2021，主持，结题.</li>
-            <li>上海市教委，上海高校青年教师培养资助计划，2019，主持，结题.</li>
-            <li>上海海事大学，国际专利（PCT）培育基金， 2019，主持，结题.</li>
-
-          </ul>
-          <hr class="divider-publication">
-	<h1>
-            Recent papers(近五年论文)
-          </h1>
-          <ul>
-              <li><b>Xinqiang Chen</b>, Zichuang Wang, Qiaozhi Hua, Wenlong Shang, Qiang Luo, Keping Yu (2023). "AI-Empowered Speed Extraction via Port-like Videos for Vehicular Trajectory Analysis" 
-              <b>IEEE Transactions on Intelligent Transportation Systems</b>, 24(4): 4541-4552. <b> (1区top SCI, ESI高被引)</b></li>
-            
-              <li><b>Xinqiang Chen</b>, Chenxin Wei, Yang Yang, Lijuan Luo, Salvatore Antonio 
-              Biancardo, Xiaojun Mei (2024). "Personnel trajectory extraction from port-like videos 
-              under varied rainy interferences" 
-              <b>IEEE Transactions on Intelligent Transportation Systems</b>, 25(7):6567-6579.<b> (1区top SCI, ESI高被引)</b></li>
-
-              <li><b>Xinqiang Chen</b>, Siying Lv, Wen-long Shang, Huafeng Wu, Jiangfeng Xian, Chengcheng Song,
-              "Ship energy consumption analysis and carbon emission exploitation via spatial-temporal maritime data"
-            Applied Energy,2024, 360:122886<b> (1区top SCI, ESI高被引)</b></li>
-
-            <li><b>Xinqiang Chen</b>, Shuting Dou, Tianqi Song, Huafeng Wu, Yang Sun*, Jiangfeng Xian, (2024). “Spatial-Temporal Ship Pollution Distribution Exploitation and Harbor Environmental Impact Analysis via Large-Scale AIS Data”.
-              <b>Journal of Marine Science and Engineering</b>, 12(6): 1-17<b>(2区SCI，ESI高被引、热点).</b></li>
-
-              <li>Guangnian Xiao, Tian Wang, <b>Xinqiang Chen*</b>,Lizhen Zhou."Evaluation of Ship Pollutant Emissions in the Ports of Los Angeles and Lonng Beach"
-              Journal of Marine Science and Engineering,2022,10(9):1206<b>(SCI,热点论文)</b>.</li>
-            
-              <li><b>Xinqiang Chen</b>, Zhibin Li, Yongsheng Yang, Lei Qi, Ruimin Ke (2021). "High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos" 
-              <b>IEEE Transactions on Intelligent Transportation Systems</b>, 22(5): 3190-3202. <b>(ESI 高被引，热点论文，SCI，入选 2022 年交通运输重大科技成果库)</b>.</li>
-            
-              <!-- <li><b>Xinqiang Chen</b>, Jun Ling, Shengzheng Wang, Yongsheng Yang, Lijuan Luo, Ying Yan (2021). "Ship Detection from Coastal Surveillance Videos via an Ensemble Canny-Gaussian-Morphology Framework" 
-              <b>Journal of Navigation</b>, 74(6): 1252-1266. (SCI, 热点论文).</li>     -->
-            
-              <li><b>Xinqiang Chen</b>, Huixing Chen, Yongsheng Yang, Huafeng Wu, Wenhui Zhang, 
-                Jiansen Zhao, Yong Xiong (2021). "Traffic flow prediction by an ensemble 
-                framework with data denoising and deep learning model" 
-                <b>Physica A: Statistical 
-                  Mechanics and its Applications</b>, 565(2021), 1-11. (SCI, ESI 高被引)</li>
-                  
-              <!-- <li><b>Xinqiang Chen</b>, Yongsheng Yang, Shengzheng Wang, Huafeng Wu, Jinjun Tang, Jiansen Zhao, Zhihuan Wang (2020). "Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network", <b>Journal of Navigation</b>, 73(4),813-832,
-                .<b>(SCI, ESI高被引).</b></li> -->
-                      
-                  
-            <li><b>Xinqiang Chen</b>, Shuhao Liu, Jiansen Zhao, Huafeng Wu*, Jiangfeng Xian, JakubMontewka. "Autonomous port management based AGV path planning and 
-              optimization via an ensemble reinforcement learning framework" 
-              <b>Ocean&Coastal Management</b>, 251(2024):107087<b>4.(1区SCI, ESI高被引、热点论文).</b>.</li>
-            
-            <li><b>Xinqiang Chen</b>, Meiling Wang, Jun Ling, Huafeng Wu, Bing Wu, Chaofeng Li. "Ship imaging trajectory extraction
-               via an aggregated you only look once (YOLO)model"<b>Engineering Applications of Artificial Intelligence</b>, 130(2024): 1-9. <b>(1区SCI, 热点论文)</b>.</li>
-
-            <li><b>Xinqiang Chen</b>, Shuhao Liu, Wen Liu, Huafeng Wu*, Bing Han, Jiansen Zhao. (2022)"Quantifying Arctic oil spilling event risk by integrating analytic network process and fuzzy comprehensive evaluation model" <b>
-              Ocean & Coastal Management</b>t, 228: 106326.<b>(1区SCI, ESI高被引).</b></li>
-            
-            <li><b>Xinqiang Chen</b>, Hao Wu, Bing Han, Wei Liu, Jakub Montewka, Ryan Wen 
-              Liu* (2023). "Orientation-aware ship detection via a rotation feature decoupling 
-              supported deep learning approach" <b>Engineering Applications of Artificial 
-                Intelligence</b>, 125(2023), 1-16. (SCI)</li>
-
-            <li><b>Xinqiang Chen</b>, Chenxin Wei, Zhengang Xin, Jiansen Zhao*, Jiangfeng Xian (2023). 
-              "Ship Detection under Low-Visibility Weather Interference via an 
-              Ensemble Generative Adversarial Network" 
-              <b>Journal of Marine Science and 
-                Engineering</b>, 1-17. (SCI)</li>
-
-            <li><b>Xinqiang Chen</b>, Jinbiao Zheng,Chaofeng Li, Bing Wu*, Huafeng Wu, JakubMontewka (2024). 
-              "Maritime traffic situation awareness analysis via high-fidelity ship imaging trajectory" <b>Multimedia tools and applications</b>,
-                (2024)83:48907-48923(SCI) 
-            <li><b>Xinqiang Chen</b>, Dongfang Ma, Wen Ryan Liu, (2024)."Application of Artificial Intelligence in Maritime Transportation".
-            <b>Journal of Marine Science and Engineering</b> 12(3):439(SCI)</li>
-
-            <li><b>Xinqiang Chen</b>, Chenxin Wei, Guiliang Zhou, Huafeng Wu, Zhongyu Wang, 
-              Salvatore Antonio Biancardo (2022). "Automatic Identification System (AIS) Data 
-              Supported Ship Trajectory Prediction and Analysis via a Deep Learning Model" 
-              <b>Journal of Marine Science and Engineering</b>, 10(9):1314. (SCI).</li>
-            
-
-            <li><b>Xinqiang Chen</b>, Huixing Chen, Xianglong Xu, Lijuan Luo, 
-              Salvatore Antonio Biancardo (2022). 
-              "Ship tracking for maritime traffic management via a data quality control 
-              supported framework" <b>Multimedia tools and applications</b>, 
-              81(5):7239-7252. (SCI) </li>
-
-
-            <li><b>陈信强</b>，戴锦宇，韩冰等. "考虑岸桥缓存区和能耗节约的AGV协同调度研究 "
-              <b>中国航海</b>, 2024, 47(3):72-80.</li>
-
-            
-            <li><b>陈信强</b>，王美琳，李朝锋，杨洋，梅骁峻 (2023). "基于深度学习与多级匹配机制的港区人员轨迹提取"
-              <b>交通运输系统工程与信息</b>, 23(4):70. (EI)</li>
-              
-            <li><b>陈信强</b>，陈建慧，刘恕浩等. "基于语义分割和霍夫变换的可见光图像海天线检测方法" 
-              <b>中国航海</b>, (CSCD扩展, 已录用).</li>
-            
-            <li><b>陈信强</b>，戴锦宇，韩冰等. "考虑岸桥缓存区和能耗节约的AGV协同调度研究" 
-              <b>中国航海</b>, (CSCD扩展, 已录用).</li>
-
-            <li><b>陈信强</b>， 高原， 赵建森等（2024）."基于Chebnet-LSTM的区域船舶交通流量预测"<b>上海海事大学学报</b>, 45(1):32-38(北大核心).</li>
-
-            <li><b>陈信强</b>，史飞翔，王梓创等 (2022). "基于模糊逻辑方法的多船会遇安全态势评估 " 
-              <b>广西大学学报(自然科学版)</b>, 47(5): 1327-1336. (北大核心)</li>
-
-            <li><b>陈信强</b>，郑金彪，凌峻等 (2022). "基于异步交互聚合网络的港船作业区域人员异常行为识别" 
-              <b>交通信息与安全</b>, 40(2): 22-29. (北大核心，CSCD扩展)</li>
-
-            <li><b>陈信强</b>，徐祥龙，彭静等 (2022). "基于Douglas-Peucker和Quick Bundles算法的水上
-              交通模式识别"<b>上海海事大学学报</b>, 43(03):1-6. (北大核心)</li>
-
-            <li><b>陈信强</b>, 凌峻, 齐雷等(2021). "多特征融合和尺度变化估计的船舶跟踪方法"
-              <b>计算机工程与应用</b>, 57(13), 246-250. (北大核心，CSCD扩展)</li>
-          </ul>
-          <ul style="list-style-type: none">
-            <li><a href="CVs/ChineseCV.pdf" target="_blank" style="color: blue; text-decoration: none;" >
-            <!--  onclick="this.style.color = 'blue'; return false;"  -->
-            <b>All published papers are available here</b></a>
-          </li>
-          </ul>
+      <nav class="nav">
+        <a class="brand" href="home.html">
+          <span class="brand-mark">M</span>
+          <span>
+            <p class="brand-title">MATLAB</p>
+            <p class="brand-subtitle">Multimodal Autonomous Smart Transportation Lab</p>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="home.html"><span class="nav-icon icon-home" aria-hidden="true"></span>首页</a>
+          <a href="Members.html"><span class="nav-icon icon-users" aria-hidden="true"></span>组内成员</a>
+          <a class="active" href="Publications.html"><span class="nav-icon icon-flask" aria-hidden="true"></span>科学研究</a>
+          <a href="Reaserch Interest.html"><span class="nav-icon icon-compass" aria-hidden="true"></span>研究方向</a>
         </div>
-        
-    </div>
+      </nav>
+    </header>
 
-    <!-- <hr class="divider-publication">
+    <main class="page">
+      <section class="section compact">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">RESEARCH</p>
+              <h2><span class="title-icon icon-flask" aria-hidden="true"></span>科学研究</h2>
+            </div>
+          </div>
 
-
-    <div id="Recent_papers"  style="margin-right: 10%">
-      <h1>
-        Selected Projects(部分主持/参与科研项目)
-              </h1>
-        <ul>
-          <li>国家自然科学基金（面上项目），面向自主航行的水上交通态势主动认知与统一表达研究，2025/01-2028/12，主持.</li>
-          <li>国家自然科学基金（青年项目），通航环境混合干扰的船舶图像航迹跟踪研究，2022/01-2024/12，主持.</li>
-          <li>中国博士后基金，复杂通航环境干扰下的高精度船舶跟踪机理研究，2022-2023，主持，结题.</li>
-          <li>水路交通控制全国重点实验室开放课题，基于随机最优的船舶自主航行智能策略研究，2025/01-2025/12，主持.</li>
-          <li>绿色物流智能技术重庆市重点实验开放基金（重点项目），面向港船协同控制的港航物流系统韧性研究—以船舶自主决策及航线优化为例，2024/11-2025/10，主持.</li>
-          <li>智能机器人江西省重点实验室开放课题（一般项目），基于多模态数据融合的船舶自主航行与智能决策研究，2025/1-2026/12，主持.</li>
-          <li>交通运输部东海航海保障中心，IALA国际航标协会事务跟踪研究，2024/6-2024/12, 主持，结题</li>
-          <li>上海船舶运输科学研究所有限公司，高精度图像航迹数据驱动的船舶智能航行通航态势感知与分析研究，2022/1-2023/12, 主持，结题.</li>
-          <li>交通运输部东海航海保障中心，水上安全通信技术数字化发展研究，2023/8-2023/12, 主持, 结题</li>
-          <li>国家水运安全工程技术研究中心开放基金，2022，主持，结题.</li>
-          <li>江苏省交通运输与安全保障重点建设实验室开放基金，2022/01-2023/12，主持，结题.</li>
-          <li>内河航运技术湖北省重点实验室开放基金，2022/01-2023/12，主持，结题.</li>
-          <li>上海海事大学，控制科学与工程研究生重点课程任务，2020-2021，主持，结题.</li>
-          <li>上海市教委，上海高校青年教师培养资助计划，2019，主持，结题.</li>
-          <li>上海海事大学，国际专利（PCT）培育基金， 2019，主持，结题.</li>
-          <li>国家自然科学基金，海洋传感网三维动态定位与数据高效传输关键技术研究，30万，2023.1-2025.12，30万，在研，第二参与人.</li>
-          <li>国家自然科学基金，基于量子优化框架的海洋传感网鲁棒性定位与追踪研究，30万，2023.1-2025.12，30万，在研，第二参与人.</li>
-          <li>上海市晨光计划，海洋立体观测网数据鲁棒高效传输关键技术研究，2024.1-2025.12, 在研，第二参与人.</li>
-          <li>中国博士后科学基金会，基于量子耦合优化框架的水下传感网目标定位与追踪研究，2022.6-2024.6，8万，在研，第二参与人.</li>
-          <li>上海市科学技术委员会，基于AIS数据的港口水域船舶交通流量预测，2023.3-2024.2，在研，第三参与人.</li>
-          <li>上海市科学技术委员会，基于深度强化学习的海洋智能集群传感网分布式估计与优化关键技术研究，2023.1-2025.12，在研，第四参与人.</li>
-          <li>国家重点研发计划，北极航道船舶航行导航优化技术及应用系统研发，2021/01-2024/12，60万，在研，参加.</li>
-          <li>国家自然科学基金面上项目，52072237，事故信息不完备环境下水上交通救援资源调控研究，2021/01-2024/12，60万，在研，参加.</li>
-          <li>国家山区公路工程技术研究中心，高速公路特殊路段主动安全防控技术与装备，2022/01-2023/06，29万，在研，参加</li>
-          <li>国家自然科学基金面上项目，52071200，基于动态自适应成簇的海洋传感网智能数据预测与重构，2021/01-2024/12，58万，在研，参加.</li>
-          <li>美国联邦公路局资助项目：Highway Grade Characterization and Operating Efficiency Methods, Tools and Data Development，36万（美金），已结题，参加</li>
-        </ul>
-    </div>
- 
-  </body> -->
-
-
-
-
-        
-
-
-        
-
-        
-        
-        
-
-
-    <!-- </div> -->
-        
-        
-
-
-
-
-
-
-    
-
-<!-- 
-        <div id="Lastupdata">
-            <ul>
-                <li>
-                    Last Updated:
-                    <script type="text/javascript">document.write(LAST_DATA)</script>
-                </li>
-            </ul>
+          <div class="research-grid">
+            <article class="research-card">
+              <span class="tag">研究方向</span>
+              <h3>视频数据驱动的复杂交通/水上通航环境智能感知与理解</h3>
+              <p>面向港航、道路与海事监控场景，研究目标检测、轨迹提取、低能见度增强、通航态势理解与安全预警</p>
+            </article>
+            <article class="research-card">
+              <span class="tag">研究方向</span>
+              <h3>自动化码头 IGV 视觉导航与智能航海</h3>
+              <p>围绕港区自动化作业，研究视觉定位、AGV/IGV 路径规划、强化学习调度、自主航行决策和港船协同控制</p>
+            </article>
+            <article class="research-card">
+              <span class="tag">研究方向</span>
+              <h3>交通大数据建模、绿色航运与能耗管理</h3>
+              <p>融合 AIS、交通流、视频轨迹与港航运行数据，开展预测建模、碳排放分析、船舶/AGV 能耗管理和交通安全评价</p>
+            </article>
+          </div>
         </div>
-    < div id = "map" style = "width: 100px; height:200 px" >
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=m9D0cp6xtc9kGeiW-RAplmhcz0__zTYuqq4JZYNSCGw&cl=ffffff&w=a"></script>
-    </div> -->
-    <!--
-    <div id="inforUpdate">
-          <script>
-          var date = new Date(); <!--获得日期数据-->
-    <!--  var year = date.getFullYear(); <!--年-->
-    <!--    var month = date.getMonth()+1; <!--月，这里的月份必须要+1才是当前月份-->
-    <!--    var day = date.getDate();&nbsp;<!--日，getDay是获得当前星期几（0-6），getDate是获得当前日期-->
-    <!-- document.getElementById("inforUpdate").innerHTML = "last visited on "+year+"-"+month+"-"+day;    </script>    </div>-->
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">PROJECTS</p>
+              <h2><span class="title-icon">P</span>科研项目</h2>
+            </div>
+          </div>
+          <div class="project-columns">
+            <article class="panel bio-panel scroll-panel">
+              <p class="section-kicker">ACTIVE PROJECTS</p>
+              <h2><span class="title-icon icon-activity" aria-hidden="true"></span>部分在研项目</h2>
+              <div class="research-scroll">
+                <ul class="project-list">
+                  <li><b>国家自然科学基金面上项目</b>，主持</li>
+                  <li><b>河南省揭榜挂帅重大科技创新项目</b>，主持</li>
+                  <li><b>交通运输部科学研究院课题</b>，主持</li>
+                  <li><b>交通运输部科学研究院标准研究课题</b>，主持</li>
+                  <li><b>智能机器人江西省重点实验室开放课题</b>，主持</li>
+                </ul>
+              </div>
+            </article>
+            <article class="panel bio-panel scroll-panel">
+              <p class="section-kicker">COMPLETED PROJECTS</p>
+              <h2><span class="title-icon icon-check" aria-hidden="true"></span>部分结题项目</h2>
+              <div class="research-scroll">
+                <ul class="project-list">
+                  <li><b>国家自然科学基金青年项目</b>，主持</li>
+                  <li><b>中国博士后基金项目</b>，主持</li>
+                  <li><b>上海市教委项目</b>，主持</li>
+                  <li><b>中国船级社项目</b>，主持</li>
+                  <li><b>交通运输部北海救助局项目</b>，主持</li>
+                  <li><b>水路交通控制全国重点实验室开放课题</b>，主持</li>
+                  <li><b>绿色物流智能技术重庆市重点实验室开放基金重点项目</b>，主持</li>
+                  <li><b>交通运输部东海航海保障中心项目</b>，主持</li>
+                  <li><b>船舶运输控制国家工程研究中心项目</b>，主持</li>
+                  <li><b>交通运输部东海航海保障中心水上安全通信课题</b>，主持</li>
+                  <li><b>国家水运安全工程技术研究中心开放基金</b>，主持</li>
+                  <li><b>江苏省交通运输与安全保障重点建设实验室开放基金</b>，主持</li>
+                  <li><b>内河航运技术湖北省重点实验室开放基金</b>，主持</li>
+                  <li><b>上海海事大学研究生重点课程任务</b>，主持</li>
+                  <li><b>上海高校青年教师培养资助计划</b>，主持</li>
+                  <li><b>上海海事大学国际专利（PCT）培育基金</b>，主持</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <article class="panel bio-panel scroll-panel medium-scroll-panel">
+            <p class="section-kicker">PATENTS</p>
+            <h2><span class="title-icon icon-patent" aria-hidden="true"></span>专利与软著</h2>
+            <div class="research-scroll">
+              <ul class="project-list">
+                <li><b>method for vessel traffic pattern recognition</b>，美国发明专利，授权</li>
+                <li><b>Ship imaging trajectory tracking and prediction</b>，美国发明专利，授权</li>
+                <li><b>一种级联式由粗到精的卷积神经网络船舶类型识别方法</b>，加拿大 PCT 发明专利，授权号 CA 3084451，2024</li>
+                <li><b>一种面向区域船舶交通流量预测方法及系统</b>，发明专利，专利号 ZL202310818778.2</li>
+                <li><b>一种面向视觉特征非连续性干扰的船舶图像航迹提取方法</b>，发明专利，专利号 ZL20221000946.9</li>
+                <li><b>一种基于语义分割和霍夫变换结合的海天线检测方法</b>，发明专利，专利号 202310777597.X</li>
+                <li><b>一种多目标船舶跟踪方法及系统</b>，发明专利，专利号 ZL202211511427.9</li>
+                <li><b>Ship detection method based on machine vision</b>，国际发明专利，授权号 2023/05030</li>
+                <li><b>A method for evaluating water traffic conditions based on fuzzy rules</b>，国际发明专利，授权号 202200772</li>
+                <li><b>Method for intelligently extracting and identifying people’s tracks in different visibility environments</b>，国际发明专利，授权号 LU502830</li>
+                <li><b>Ship tracking method and system</b>，国际发明专利，申请号 F/PT/C/2023/7983，已授权</li>
+                <li><b>一种车头时距建模方法及一种最小绿灯时间计算方法</b>，发明专利，申请号 201910461276.2</li>
+                <li><b>一种不同能见度环境中人员轨迹的智能提取与识别方法</b>，发明专利，申请号 202210997576.4</li>
+                <li><b>一种基于船艏向识别的船舶图像轨迹跟踪与预测方法</b>，发明专利，申请号 202210789127.0</li>
+                <li><b>面向港航环境下的工作人员异常行为识别方法</b>，发明专利，申请号 202210006996.1</li>
+                <li><b>融合数据质量控制和数据压缩的船舶交通模式识别方法</b>，发明专利，申请号 202210026085.5</li>
+                <li><b>基于 WSN 构建的船舶驾驶台火灾监控系统</b>，授权发明专利，专利号 CN201110276308.5</li>
+                <li><b>基于大数据的水上交通安全监管系统</b>，软著，登记号 2023SR1507310</li>
+                <li><b>基于倾斜船舶成像检测的航迹识别程序</b>，软著，登记号 2022SR1015915</li>
+                <li><b>海上船舶航行速度预测分析系统</b>，软著，登记号 2023SR0022403</li>
+                <li><b>船舶航行轨迹数据智能强化学习系统</b>，软著，登记号 2023SR0420021</li>
+              </ul>
+            </div>
+          </article>
+          <article class="panel bio-panel scroll-panel medium-scroll-panel">
+            <p class="section-kicker">BOOKS</p>
+            <h2><span class="title-icon icon-book" aria-hidden="true"></span>著作 / 标准</h2>
+            <div class="research-scroll">
+              <ul class="project-list">
+                <li><b>《船舶智能航行视觉感知技术》</b>，人民交通出版社，2025 年 11 月</li>
+                <li><b>Smart and Low Carbon Emission-Oriented Maritime Traffic Management and Controlling</b>，MDPI，2025 年 12 月</li>
+                <li><b>Application of Artificial Intelligence in Maritime Transportation</b>，MDPI，2024 年 4 月</li>
+                <li><b>船舶智能航行系统通用技术规范</b>，团体标准，编号 T/HNECER 0011-2026</li>
+                <li><b>关于加快相关领域发展的 A2 专报批示</b>，科研咨询与政策建议成果</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">PUBLICATIONS</p>
+              <h2><span class="title-icon icon-paper" aria-hidden="true"></span>代表性论文</h2>
+            </div>
+          </div>
+          <article class="panel bio-panel scroll-panel paper-panel">
+            <div class="research-scroll">
+              <ol class="paper-list">
+                <li><b>Xinqiang Chen</b>, Chenxin Wei, Yang Yang 等，<a href="file/Personnel_Trajectory_Extraction_From_Port-Like_Videos_Under_Varied_Rainy_Interferences.pdf" target="_blank">Personnel trajectory extraction from port-like videos under varied rainy interferences</a>，<b>IEEE Transactions on Intelligent Transportation Systems</b>，2024，1 区 Top SCI，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Zichuang Wang, Qiaozhi Hua 等，<a href="file/AI-Empowered_Speed_Extraction_via_Port-Like_Videos_for_Vehicular_Trajectory_Analysis.pdf" target="_blank">AI-Empowered Speed Extraction via Port-like Videos for Vehicular Trajectory Analysis</a>，<b>IEEE Transactions on Intelligent Transportation Systems</b>，2023，1 区 Top SCI，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Zhibin Li, Yongsheng Yang 等，<a href="file/High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos.pdf" target="_blank">High-Resolution Vehicle Trajectory Extraction and Denoising From Aerial Videos</a>，<b>IEEE Transactions on Intelligent Transportation Systems</b>，2021，1 区 Top SCI，ESI 高被引，热点论文</li>
+                <li><b>Xinqiang Chen</b>, Zhengang Xin, Han Zhang 等，Vision Transformer-Based Image Dehazing for Climate-Resilient Maritime Navigation，<b>IEEE Transactions on Intelligent Transportation Systems</b>，2026，1 区 Top SCI</li>
+                <li><b>Xinqiang Chen</b>, Fei Ma, Yuzhen Wu 等，MFMDepth: MetaFormer-based monocular metric depth estimation for distance measurement in ports，<b>Computers & Industrial Engineering</b>，2025，ESI 高被引，ESI 热点</li>
+                <li><b>Xinqiang Chen</b>, Ruiyang Hu, Kai Luo 等，Intelligent Ship route planning via an A* search model enhanced double-deep Q-Network，<b>Ocean Engineering</b>，2025，ESI 高被引，热点论文</li>
+                <li><b>Xinqiang Chen</b>, Weiping Chen, Bing Wu 等，Ship visual trajectory exploitation via an ensemble instance segmentation framework，<b>Ocean Engineering</b>，2024，ESI 高被引，热点论文</li>
+                <li><b>Xinqiang Chen</b>, Shuhao Liu, Jiansen Zhao 等，Autonomous port management based AGV path planning and optimization via an ensemble reinforcement learning framework，<b>Ocean & Coastal Management</b>，2024，ESI 高被引，热点论文</li>
+                <li><b>Xinqiang Chen</b>, Siying Lv, Wen-long Shang 等，<a href="file/Ship energy consumption analysis and carbon emission exploitation via spatial-temporal maritime data.pdf" target="_blank">Ship energy consumption analysis and carbon emission exploitation via spatial-temporal maritime data</a>，<b>Applied Energy</b>，2024，ESI 高被引，热点论文</li>
+                <li><b>Xinqiang Chen</b>, Meiling Wang, Jun Ling 等，Ship imaging trajectory extraction via an aggregated you only look once model，2024，1 区 SCI，ESI 热点论文</li>
+                <li><b>Xinqiang Chen</b>, Shuting Dou, Tianqi Song 等，Spatial-Temporal Ship Pollution Distribution Exploitation and Analysis，<b>Journal of Marine Science and Engineering</b>，2024，ESI 高被引，热点论文</li>
+                <li><b>Xinqiang Chen</b>, Dongfang Ma, Wen Ryan Liu，Application of Artificial Intelligence in Maritime Transportation，<b>Journal of Marine Science and Engineering</b>，2024，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Hao Wu, Bing Han 等，Orientation-aware ship detection via a rotation feature decoupling supported deep learning approach，<b>Engineering Applications of Artificial Intelligence</b>，2023，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Jinbiao Zheng, Chaofeng Li 等，Maritime traffic situation awareness analysis via high-resolution knowledge mapping，2024，ESI 热点论文</li>
+                <li><b>Xinqiang Chen</b>, Shuhao Liu, Wen Liu 等，Quantifying Arctic oil spilling event risk by integrating analytic network，<b>Ocean & Coastal Management</b>，2022，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Jun Ling, Shengzheng Wang 等，Ship Detection from Coastal Surveillance Videos via an Ensemble Canny-Gaussian-morphology Framework，2021，热点论文</li>
+                <li><b>Xinqiang Chen</b>, Huixing Chen, Yongsheng Yang 等，Traffic flow prediction by an ensemble framework，2021，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Yongsheng Yang, Shengzheng Wang 等，Ship Type Recognition via a Coarse-to-Fine Cascaded Convolution Neural Network，<b>Journal of Navigation</b>，2020，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Lei Qi, Yongsheng Yang 等，Video-Based Detection Infrastructure Enhancement for Automated Ship Recognition and Behavior Analysis，2020，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Xueqian Xu, Yongsheng Yang 等，Augmented Ship Tracking under Occlusion Conditions From Maritime Surveillance Videos，<b>IEEE Access</b>，2020，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Shubo Wu, Chaojian Shi 等，Sensing Data Supported Traffic Flow Prediction via Denoising Schemes and ANN，<b>IEEE Sensors Journal</b>，2020，ESI 高被引</li>
+                <li><b>Xinqiang Chen</b>, Shengzheng Wang, Chaojian Shi 等，Robust ship tracking via multi-view learning and sparse representation，<b>Journal of Navigation</b>，2019，ESI 高被引，入选交通运输重大科技成果库</li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span><b>MATLAB</b> | 科学研究</span>
+        <span><a href="CVs/ChineseCV.pdf" target="_blank">查看完整中文简历</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
 
 
 
-
-</body></html>
