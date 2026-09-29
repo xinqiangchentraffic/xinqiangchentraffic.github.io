@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=1180">
     <title>组内成员 | 陈信强课题组</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/members-carousel.css">
+    <script src="js/members-carousel.js" defer></script>
   </head>
   <body class="subpage-layout">
     <header class="site-header">
@@ -47,9 +49,24 @@
             </div>
           </div>
 
-          <div class="photo-carousel single" aria-label="课题组合照">
-            <div class="photo-track">
+          <div class="photo-carousel members-carousel" role="region" aria-roledescription="轮播图" aria-label="课题组合照" tabindex="0">
+            <div class="photo-track" id="team-photo-track">
               <div class="photo-slide"><img src="image/Lab1.JPG" alt="课题组合照"><span>课题组合照</span></div>
+              <div class="photo-slide"><img src="image/Lab_7.JPG" alt="课题组校园合照"><span>课题组合照</span></div>
+              <div class="photo-slide"><img src="image/Lab_6.jpg" alt="课题组毕业合照"><span>课题组合照</span></div>
+              <div class="photo-slide"><img src="image/Lab_5.JPG" alt="课题组校园毕业合照"><span>课题组合照</span></div>
+              <div class="photo-slide"><img src="image/Lab_4.jpg" alt="课题组毕业留念"><span>课题组合照</span></div>
+              <div class="photo-slide"><img src="image/Lab_3.jpg" alt="课题组毕业典礼合照"><span>课题组合照</span></div>
+              <div class="photo-slide"><img src="image/Lab_2.jpg" alt="课题组校园留念"><span>课题组合照</span></div>
+              <div class="photo-slide"><img src="image/Lab_1.jpg" alt="课题组毕业季合照"><span>课题组合照</span></div>
+            </div>
+            <div class="photo-controls" hidden>
+              <button class="photo-arrow photo-prev" type="button" aria-label="上一张合照" aria-controls="team-photo-track">&#10094;</button>
+              <button class="photo-arrow photo-next" type="button" aria-label="下一张合照" aria-controls="team-photo-track">&#10095;</button>
+              <div class="photo-toolbar">
+                <div class="photo-dots" role="group" aria-label="选择合照"></div>
+                <span class="photo-count" aria-live="off"></span>
+              </div>
             </div>
           </div>
 
